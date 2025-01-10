@@ -1,0 +1,117 @@
+{
+  "playbook": {
+    "criteria": [
+      {
+        "name": "Looptijd",
+        "description": "De duur van de geheimhoudingsovereenkomst.",
+        "acceptable_conditions": [
+          "Specifieke looptijd van 2 tot 5 jaar.",
+          "Onbepaalde looptijd alleen voor bedrijfsgevoelige informatie."
+        ],
+        "dealbreaker": [
+          "Geen specifieke looptijd vermeld.",
+          "Looptijd langer dan 10 jaar zonder geldige reden."
+        ],
+        "risks": [
+          "Looptijd korter dan 1 jaar zonder rechtvaardiging.",
+          "Looptijd afhankelijk van beëindiging door één partij."
+        ],
+        "attention_points": [
+          "Geen heldere afspraken over verlenging of beëindiging van de looptijd."
+        ]
+      },
+      {
+        "name": "Definitie van Vertrouwelijke Informatie",
+        "description": "Welke informatie valt onder geheimhouding?",
+        "acceptable_conditions": [
+          "Specifieke en limitatieve lijst van vertrouwelijke informatie.",
+          "Uitsluiting van publiek beschikbare informatie."
+        ],
+        "dealbreaker": [
+          "Geen duidelijke definitie van vertrouwelijke informatie.",
+          "Definitie omvat publiek beschikbare of algemeen bekende informatie."
+        ],
+        "risks": [
+          "Definitie is te breed en onduidelijk.",
+          "Geen uitzondering voor informatie die al bekend was bij de ontvangende partij."
+        ],
+        "attention_points": [
+          "Geen duidelijke bepaling voor mondelinge informatie."
+        ]
+      },
+      {
+        "name": "Gebruiksbeperkingen",
+        "description": "Hoe mag vertrouwelijke informatie worden gebruikt?",
+        "acceptable_conditions": [
+          "Gebruik uitsluitend voor het overeengekomen doel.",
+          "Verbod op delen met derden zonder toestemming."
+        ],
+        "dealbreaker": [
+          "Geen beperkingen op gebruik opgenomen.",
+          "Onbeperkte toestemming voor delen met derden."
+        ],
+        "risks": [
+          "Geen specifieke beperking op het gebruik in de context van de overeenkomst."
+        ],
+        "attention_points": [
+          "Geen verplichting om vertrouwelijke informatie te vernietigen na afloop van de overeenkomst."
+        ]
+      },
+      {
+        "name": "Aansprakelijkheid",
+        "description": "Wie is aansprakelijk voor schending van geheimhouding?",
+        "acceptable_conditions": [
+          "Aansprakelijkheid beperkt tot directe schade."
+        ],
+        "dealbreaker": [
+          "Geen aansprakelijkheid opgenomen.",
+          "Volledige uitsluiting van aansprakelijkheid voor grove nalatigheid of opzet."
+        ],
+        "risks": [
+          "Onredelijk hoge aansprakelijkheidslimieten."
+        ],
+        "attention_points": [
+          "Geen bepaling voor schadevergoeding bij schending."
+        ]
+      },
+      {
+        "name": "Rechtsgebied en Jurisdictie",
+        "description": "Toepasselijk recht en bevoegde rechtbank.",
+        "acceptable_conditions": [
+          "Toepassing van Nederlands recht.",
+          "Bevoegde rechtbank in Nederland."
+        ],
+        "dealbreaker": [
+          "Toepassing van buitenlands recht zonder reden.",
+          "Rechtsgebied dat geen relevante ervaring heeft met vertrouwelijkheidsgeschillen."
+        ],
+        "risks": [
+          "Toepassing van recht dat moeilijk uitvoerbaar is."
+        ],
+        "attention_points": [
+          "Geen forumkeuze opgenomen."
+        ]
+      }
+    ],
+    "output_preferences": {
+      "format": "table",
+      "visual_aspects": {
+        "dealbreakers": {
+          "color": "red",
+          "icon": "⚠️",
+          "highlight": true
+        },
+        "risks": {
+          "color": "orange",
+          "icon": "🔶",
+          "highlight": false
+        },
+        "attention_points": {
+          "color": "yellow",
+          "icon": "⚡",
+          "highlight": false
+        }
+      }
+    }
+  }
+}
