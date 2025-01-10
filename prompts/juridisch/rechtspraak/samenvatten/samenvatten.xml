@@ -1,0 +1,81 @@
+<rechtelijke_uitspraak>
+    <metadata>
+        <instantie></instantie>
+        <datum></datum>
+        <zaaknummer></zaaknummer>
+        <rechtsgebied></rechtsgebied>
+    </metadata>
+    
+    <analyse_instructies>
+        Analyseer deze rechterlijke uitspraak volgens de volgende structuur:
+        
+        1. Presenteer eerst de feitelijke informatie onder "# Feiten"
+        2. Identificeer en beschrijf de rechtsvragen onder "# Rechtsvragen"
+        3. Onder elke rechtsvraag:
+           - Beschrijf de argumenten van partijen onder "## Argumenten"
+           - Vat de conclusie van de rechter samen onder "## Conclusie"
+        4. Analyseer de impact onder "# Impact"
+    </analyse_instructies>
+
+    <analyse_parameters>
+        <feiten>
+            <instructie>
+                - Geef een chronologisch overzicht van de relevante feiten
+                - Focus op feiten die direct relevant zijn voor de rechtsvragen
+                - Vermijd interpretaties of juridische kwalificaties
+                - Gebruik objectieve, neutrale taal
+            </instructie>
+        </feiten>
+
+        <rechtsvragen>
+            <instructie>
+                - Identificeer de centrale juridische vragen
+                - Formuleer elke rechtsvraag helder en beknopt
+                - Groepeer gerelateerde subvragen indien aanwezig
+            </instructie>
+            <argumenten>
+                <instructie>
+                    - Beschrijf de standpunten van alle partijen
+                    - Geef de belangrijkste argumenten weer
+                    - Verwijs naar relevante wetgeving of jurisprudentie
+                    - Maak onderscheid tussen feitelijke en juridische argumenten
+                </instructie>
+            </argumenten>
+            <conclusie>
+                <instructie>
+                    - Vat de beslissing van de rechter samen
+                    - Beschrijf de belangrijkste overwegingen
+                    - Citeer kernachtige overwegingen letterlijk
+                    - Leg uit hoe de conclusie volgt uit de argumentatie
+                </instructie>
+            </conclusie>
+        </rechtsvragen>
+
+        <impact>
+            <instructie>
+                - Analyseer de juridische precedentwerking
+                - Beschrijf praktische gevolgen voor vergelijkbare gevallen
+                - Identificeer mogelijke implicaties voor specifieke sectoren
+                - Benoem eventuele maatschappelijke impact
+                - Geef aan of vervolgprocedures waarschijnlijk zijn
+            </instructie>
+        </impact>
+    </analyse_parameters>
+
+    <output_format>
+        # Feiten
+        [Chronologisch overzicht van relevante feiten]
+
+        # Rechtsvragen
+        [Centrale juridische vragen]
+
+        ## Argumenten
+        [Standpunten en argumentatie van partijen]
+
+        ## Conclusie
+        [Beslissing en overwegingen van de rechter]
+
+        # Impact
+        [Analyse van juridische en praktische gevolgen]
+    </output_format>
+</rechtelijke_uitspraak>
