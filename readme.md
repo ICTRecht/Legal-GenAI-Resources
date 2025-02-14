@@ -33,6 +33,11 @@ Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als 
 
 ---
 
+## 🆕 Nieuwe prompts toevoegen?
+
+   - Klik bovenaan deze pagina op issue en stuur een prompt in. Dit mag een kant en klare prompt zijn maar het idee voor een prompt is ook van harte welkom! Wij zorgen ervoor dat er een uitgebreide en gestrutureerde versie van komt. 
+   - Wil je - als doorgewinterde GitHub-gebruiker - zelf uploaden? Zie dan hieronder bij **Bijdragen**.
+
 ## 📂 Bestandsstructuur
 
 We hebben een eenvoudige en duidelijke structuur om prompts te organiseren:
@@ -110,11 +115,11 @@ Geef hier een voorbeeld van de gegenereerde output, zodat gebruikers weten wat z
 
 ---
 
-## 📜 Licentie
+## 📜 Licentie en community
 ```
 De prompts zijn te gebruiken onder een CC BY licentie en mogen vrijelijk hergebruikt en aangepast worden.
 ---
 
-## 🌐 Community en Support
+## 🌐 Community en support
 
 Heb je vragen of wil je feedback geven? Open een [issue](https://github.com/ICTRecht/prompts/issues).
