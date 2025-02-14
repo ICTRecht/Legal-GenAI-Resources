@@ -3,6 +3,20 @@
 Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als een gedeelde bron voor het verzamelen, organiseren en delen van prompts die werken met ChatGPT en andere Generative AI (GenAI) systemen en gericht zijn op juridische of ondersteunende taken.
 
 ---
+## 🧠 Hoe de prompts te gebruiken
+
+1. **Structuur**
+   - GenAI gaat goed om met zeer gestructureerde instructies (bijvoorbeeld in de vorm van XML, JSON of MarkDown). 
+   - De prompts binnen deze omgeving hebben allemaal een dergelijke structuur.
+
+2. **Gebruik**
+   - Je kunt de prompts kopieren en plakken in een willekeurige GenAI-toepassing om deze uit te voeren. Aan de prompt zelf hoef je niets meer te doen. Sommige prompts zijn ontwikkeld om een bestand te reviewen. In dat geval upload je het bestand samen met de prompt. Vaak is een druk op enter voldoende maar het kan zijn dat de AI vraagt of het de prompt moet uitvoeren. Een vriendelijke 'ja, graag' is dan voldoende.
+   - Sommige prompts bevatten specifieke instructies of zijn geschikt voor specifieke modellen, lees in dat geval het Readme bestand voor aanvullende informatie.
+
+3. **Aanpassen naar eigen wens**
+   - Heb je een prompt gevonden die je graag wil aanpassen naar een specifieke situatie, zoals het invoegen van een bedrijfsspecifiek playbook? Kopieer de prompt dan samen met het playbook in een AI en vraag het om de prompt aan te passen naar de specifieke situatie. De gestructureerde prompt zal aangepast worden zonder de opzet aan te passen.
+   - Vergeet de nieuwe prompt niet te delen!
+
 
 ## 🛠️ Hoe de repository te gebruiken
 
@@ -14,7 +28,7 @@ Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als 
    - Heb je een interessante prompt ontwikkeld? Voeg deze toe aan de repository door een Pull Request te maken.
    - Zorg ervoor dat je prompt voldoet aan de richtlijnen voor indeling en beschrijving (zie hieronder).
 
-3. **Aanpassen en Experimenteren**
+3. **Aanpassen en experimenteren**
    - Pas prompts aan naar jouw behoeften en deel verbeteringen met de community.
 
 ---
@@ -97,8 +111,8 @@ Geef hier een voorbeeld van de gegenereerde output, zodat gebruikers weten wat z
 ---
 
 ## 📜 Licentie
-
-[Licentie bepalen?]
+```
+De prompts zijn te gebruiken onder een CC BY licentie en mogen vrijelijk hergebruikt en aangepast worden.
 ---
 
 ## 🌐 Community en Support
