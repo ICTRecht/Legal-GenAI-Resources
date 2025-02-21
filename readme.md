@@ -34,9 +34,8 @@ Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als 
 ---
 
 ## 🆕 Nieuwe prompts toevoegen?
-
-   - Klik bovenaan deze pagina op issue en stuur een prompt in. Dit mag een kant en klare prompt zijn maar het idee voor een prompt is ook van harte welkom! Wij zorgen ervoor dat er een uitgebreide en gestrutureerde versie van komt. 
-   - Wil je - als doorgewinterde GitHub-gebruiker - zelf uploaden? Zie dan hieronder bij **Bijdragen**.
+   - De makkelijkste route is om bovenaan deze pagina een issue aan te maken en een prompt in te sturen. Dit mag een kant en klare prompt zijn, maar het idee voor een prompt is ook van harte welkom! Wij zorgen ervoor dat er een uitgebreide en gestrutureerde versie van komt. 
+   - Wil je - als doorgewinterde GitHub-gebruiker 🤓 - zelf uploaden? Zie dan hieronder bij **Bijdragen**.
 
 ## 📂 Bestandsstructuur
 
@@ -104,15 +103,54 @@ Geef hier een voorbeeld van de gegenereerde output, zodat gebruikers weten wat z
 ---
 
 ## ✍️ Bijdragen
+Wil je bijdragen aan dit project? Volg dan deze stappen om je wijzigingen correct in te dienen:
 
-1. Clone deze repository.
-2. Maak een nieuwe branch voor jouw wijzigingen:
-   ```bash
-   git checkout -b mijn-nieuwe-prompt
-   ```
-3. Voeg jouw bestand toe aan de juiste map in de `prompts/` directory.
-4. Open een Pull Request en beschrijf jouw wijzigingen.
+### 1. Fork & Clone
+Fork deze repository en clone je fork naar je lokale omgeving.
 
+```bash
+git clone https://github.com/ICTRecht/prompts.git
+cd prompts
+```
+
+### 2. Maak een feature branch
+Werk nooit direct in `master` of `dev`. Maak een nieuwe branch gebaseerd op `dev`:
+
+```bash
+git checkout dev
+git pull origin dev  # Zorg dat je up-to-date bent
+git checkout -b prompt/{naam-van-je-prompt}
+```
+
+### 3. Werk aan je wijzigingen
+Voeg je codewijzigingen toe, commit ze en push naar je fork:
+
+```bash
+git add .
+git commit -m "Beschrijving van de wijziging"
+git push origin prompt/{naam-van-je-prompt}
+```
+
+### 4. Maak een Pull Request aan
+1. Ga naar de [GitHub repo](https://github.com/ICTRecht/prompts).
+2. Open een **Pull Request** van jouw `prompt/{naam-van-je-prompt}` branch naar de `dev` branch.
+3. Voeg een duidelijke beschrijving toe van je wijziging.
+
+### 5. Review en Merge
+- Het team zal je PR beoordelen en eventueel feedback geven.
+- Zodra goedgekeurd, wordt de wijziging gemerged in `dev`.
+- Het team kan nog mogelijk optimalisaties uitvoereen aan de prompts, waarna wijzigingen ook op de `master` branch zullen worden gepubliceerd.
+
+### 6. Synchroniseer je lokale repo
+Na het mergen, houd je lokale repository up-to-date:
+
+```bash
+git checkout dev
+git pull origin dev
+git branch -d prompt/{naam-van-je-prompt}  # Verwijder de feature branch lokaal
+```
+
+**Dank voor je bijdrage!**
 ---
 
 ## 📜 Licentie en community
