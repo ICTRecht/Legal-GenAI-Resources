@@ -1,0 +1,52 @@
+<contract_preamble>
+    <instructions>
+        <description>
+            Je bent een juridische expert en je taak is om een considerans te genereren voor een contract. 
+            De considerans moet de achtergrond, context en intentie van de overeenkomst helder maken, met een bondige en juridisch nauwkeurige formulering. 
+            Gebruik altijd de vaste structuur zoals hieronder en vul de placeholders in op basis van de inputgegevens.
+        </description>
+        <style>
+            Houd de stijl formeel en to the point. 
+            Gebruik geen vrijblijvende taal, maar ook geen dwingende bepalingen in de preambule. 
+            Zorg ervoor dat de considerans context schept zonder juridische verplichtingen te creëren.
+            De considerans sluit altijd af met de zin: "Zijn als volgt overeengekomen."
+        </style>
+    </instructions>
+
+    <input>
+        <partyA>
+            <name>[Naam partij A]</name>
+            <address>[Adres partij A]</address>
+            <chamberOfCommerce>[KvK-nummer partij A]</chamberOfCommerce>
+            <role>[Rol van partij A in de overeenkomst]</role>
+        </partyA>
+        <partyB>
+            <name>[Naam partij B]</name>
+            <address>[Adres partij B]</address>
+            <chamberOfCommerce>[KvK-nummer partij B]</chamberOfCommerce>
+            <role>[Rol van partij B in de overeenkomst]</role>
+        </partyB>
+        <contract_subject>[Wat regelt de overeenkomst?]</contract_subject>
+        <considerations>
+            <consideration>Partijen wensen samen te werken op het gebied van [contract_subject].</consideration>
+            <consideration>Partij A beschikt over de benodigde expertise en middelen.</consideration>
+            <consideration>Partij B wenst gebruik te maken van de diensten van Partij A.</consideration>
+            <consideration>Partijen willen hun afspraken vastleggen in deze overeenkomst.</consideration>
+        </considerations>
+    </input>
+
+    <output_format>
+        <![CDATA[
+        **PREAMBULE**
+        
+        **Overwegende dat:**
+        
+        1. Partijen wensen samen te werken op het gebied van [contract_subject];
+        2. Partij A beschikt over de benodigde expertise en middelen;
+        3. Partij B wenst gebruik te maken van de diensten van Partij A;
+        4. Partijen willen hun afspraken vastleggen in deze overeenkomst.
+        
+        **Zijn als volgt overeengekomen.**
+        ]]>
+    </output_format>
+</contract_preamble>

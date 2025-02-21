@@ -3,6 +3,20 @@
 Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als een gedeelde bron voor het verzamelen, organiseren en delen van prompts die werken met ChatGPT en andere Generative AI (GenAI) systemen en gericht zijn op juridische of ondersteunende taken.
 
 ---
+## 🧠 Hoe de prompts te gebruiken
+
+1. **Structuur**
+   - GenAI gaat goed om met zeer gestructureerde instructies (bijvoorbeeld in de vorm van XML, JSON of MarkDown). 
+   - De prompts binnen deze omgeving hebben allemaal een dergelijke structuur.
+
+2. **Gebruik**
+   - Je kunt de prompts kopieren en plakken in een willekeurige GenAI-toepassing om deze uit te voeren. Aan de prompt zelf hoef je niets meer te doen. Sommige prompts zijn ontwikkeld om een bestand te reviewen. In dat geval upload je het bestand samen met de prompt. Vaak is een druk op enter voldoende maar het kan zijn dat de AI vraagt of het de prompt moet uitvoeren. Een vriendelijke 'ja, graag' is dan voldoende.
+   - Sommige prompts bevatten specifieke instructies of zijn geschikt voor specifieke modellen, lees in dat geval het Readme bestand voor aanvullende informatie.
+
+3. **Aanpassen naar eigen wens**
+   - Heb je een prompt gevonden die je graag wil aanpassen naar een specifieke situatie, zoals het invoegen van een bedrijfsspecifiek playbook? Kopieer de prompt dan samen met het playbook in een AI en vraag het om de prompt aan te passen naar de specifieke situatie. De gestructureerde prompt zal aangepast worden zonder de opzet aan te passen.
+   - Vergeet de nieuwe prompt niet te delen!
+
 
 ## 🛠️ Hoe de repository te gebruiken
 
@@ -14,10 +28,14 @@ Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als 
    - Heb je een interessante prompt ontwikkeld? Voeg deze toe aan de repository door een Pull Request te maken.
    - Zorg ervoor dat je prompt voldoet aan de richtlijnen voor indeling en beschrijving (zie hieronder).
 
-3. **Aanpassen en Experimenteren**
+3. **Aanpassen en experimenteren**
    - Pas prompts aan naar jouw behoeften en deel verbeteringen met de community.
 
 ---
+
+## 🆕 Nieuwe prompts toevoegen?
+   - De makkelijkste route is om bovenaan deze pagina een issue aan te maken en een prompt in te sturen. Dit mag een kant en klare prompt zijn, maar het idee voor een prompt is ook van harte welkom! Wij zorgen ervoor dat er een uitgebreide en gestrutureerde versie van komt. 
+   - Wil je - als doorgewinterde GitHub-gebruiker 🤓 - zelf uploaden? Zie dan hieronder bij **Bijdragen**.
 
 ## 📂 Bestandsstructuur
 
@@ -85,22 +103,61 @@ Geef hier een voorbeeld van de gegenereerde output, zodat gebruikers weten wat z
 ---
 
 ## ✍️ Bijdragen
+Wil je bijdragen aan dit project? Volg dan deze stappen om je wijzigingen correct in te dienen:
 
-1. Clone deze repository.
-2. Maak een nieuwe branch voor jouw wijzigingen:
-   ```bash
-   git checkout -b mijn-nieuwe-prompt
-   ```
-3. Voeg jouw bestand toe aan de juiste map in de `prompts/` directory.
-4. Open een Pull Request en beschrijf jouw wijzigingen.
+### 1. Fork & Clone
+Fork deze repository en clone je fork naar je lokale omgeving.
 
+```bash
+git clone https://github.com/ICTRecht/prompts.git
+cd prompts
+```
+
+### 2. Maak een feature branch
+Werk nooit direct in `master` of `dev`. Maak een nieuwe branch gebaseerd op `dev`:
+
+```bash
+git checkout dev
+git pull origin dev  # Zorg dat je up-to-date bent
+git checkout -b prompt/{naam-van-je-prompt}
+```
+
+### 3. Werk aan je wijzigingen
+Voeg je codewijzigingen toe, commit ze en push naar je fork:
+
+```bash
+git add .
+git commit -m "Beschrijving van de wijziging"
+git push origin prompt/{naam-van-je-prompt}
+```
+
+### 4. Maak een Pull Request aan
+1. Ga naar de [GitHub repo](https://github.com/ICTRecht/prompts).
+2. Open een **Pull Request** van jouw `prompt/{naam-van-je-prompt}` branch naar de `dev` branch.
+3. Voeg een duidelijke beschrijving toe van je wijziging.
+
+### 5. Review en Merge
+- Het team zal je PR beoordelen en eventueel feedback geven.
+- Zodra goedgekeurd, wordt de wijziging gemerged in `dev`.
+- Het team kan nog mogelijk optimalisaties uitvoereen aan de prompts, waarna wijzigingen ook op de `master` branch zullen worden gepubliceerd.
+
+### 6. Synchroniseer je lokale repo
+Na het mergen, houd je lokale repository up-to-date:
+
+```bash
+git checkout dev
+git pull origin dev
+git branch -d prompt/{naam-van-je-prompt}  # Verwijder de feature branch lokaal
+```
+
+**Dank voor je bijdrage!**
 ---
 
-## 📜 Licentie
-
-[Licentie bepalen?]
+## 📜 Licentie en community
+```
+De prompts zijn te gebruiken onder een CC BY licentie en mogen vrijelijk hergebruikt en aangepast worden.
 ---
 
-## 🌐 Community en Support
+## 🌐 Community en support
 
 Heb je vragen of wil je feedback geven? Open een [issue](https://github.com/ICTRecht/prompts/issues).
