@@ -1,0 +1,25 @@
+📌 Overzicht
+
+- Deze prompt beoordeelt een NDA aan de hand van een vooraf gedefinieerd playbook met standaardvoorwaarden. Dit is een zeer basaal playbook.
+
+🚀 Hoe gebruik je het?
+
+- Upload het bestand (zorg voor een beveiligde omgeving en verwijder gevoelige gegevens)
+
+- Kopieer de prompt naar een LLM naar keuze, druk op enter en laat AI het werk doen.
+
+- Controleer de gegenereerde beoordeling en pas deze zo nodig aan.
+
+- Deze prompt is onder andere getest in Claude en ChatGPT.
+
+🛠 Aanpassingen
+
+- Je kunt de prompt eenvoudig naar een op maat gemaakt playbook aanpassen. Kopieer de prompt en het playbook in het taalmodel en vraag de AI de prompt aan te passen conform het playbook. Controleer uiteraard altjd de output!
+
+- Het format van de output kan eventueel worden gewijzigd naar Markdown of JSON.
+
+📖 Voorwaarden
+
+- De prompt is bedoeld als ondersteunend hulpmiddel en vervangt geen juridisch advies.
+
+- Controleer altijd de output voordat je deze gebruikt in juridische documenten.

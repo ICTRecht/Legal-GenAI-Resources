@@ -1,0 +1,120 @@
+<metadataRecognition>
+    <!-- Metadata Recognition and Pseudonymization -->
+    <!-- 
+    This XML configuration is designed to identify and pseudonymize metadata in legal documents.
+    The goal is to replace sensitive information with anonymized placeholders while preserving the structure of the original document. 
+
+    Instructions:
+    - Provide a document as input for processing.
+    - The XML rules defined here will identify specific patterns in the text and replace them with standardized pseudonymized values.
+    - The language is primarily Dutch and English.
+    -->
+
+    <rules>
+        <!-- KvK-nummer: 8 cijfers -->
+        <rule>
+            <description>Detect and replace Dutch KvK registration numbers (8 digits).</description>
+            <pattern>\b\d{8}\b</pattern>
+            <replacement>KvK-XXXXXXXX</replacement>
+        </rule>
+
+        <!-- Persoonsnamen: Voor- en Achternaam -->
+        <rule>
+            <description>Detect and replace names with first and last name structure.</description>
+            <pattern>[A-Z][a-z]+\s[A-Z][a-z]+</pattern>
+            <replacement>Naam-XXXX</replacement>
+        </rule>
+
+        <!-- BSN-nummer: 9 cijfers -->
+        <rule>
+            <description>Detect and replace Dutch social security numbers (BSN, 9 digits).</description>
+            <pattern>\b\d{9}\b</pattern>
+            <replacement>BSN-XXXXXXXXX</replacement>
+        </rule>
+
+        <!-- Adres: Straat en huisnummer -->
+        <rule>
+            <description>Detect and replace street addresses with a house number.</description>
+            <pattern>[A-Za-z\s]+\s\d+[a-zA-Z]?</pattern>
+            <replacement>Adres-XXXX</replacement>
+        </rule>
+
+        <!-- Datum: DD-MM-YYYY of YYYY-MM-DD -->
+        <rule>
+            <description>Detect and replace dates in common formats (DD-MM-YYYY or YYYY-MM-DD).</description>
+            <pattern>\b\d{2}-\d{2}-\d{4}\b|\b\d{4}-\d{2}-\d{2}\b</pattern>
+            <replacement>Datum-XXXX</replacement>
+        </rule>
+
+        <!-- E-mailadres -->
+        <rule>
+            <description>Detect and replace email addresses.</description>
+            <pattern>[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}</pattern>
+            <replacement>email-XXXX@example.com</replacement>
+        </rule>
+
+        <!-- Telefoonnummer: Nederlands format -->
+        <rule>
+            <description>Detect and replace Dutch phone numbers (national and international).</description>
+            <pattern>\b\+31\s?\d{1,2}\s?\d{6,8}\b|\b0\d{2,3}\s?\d{6,8}\b</pattern>
+            <replacement>telefoon-XXXX</replacement>
+        </rule>
+
+        <!-- Ingangsdatum -->
+        <rule>
+            <description>Detect and replace contract start dates with "Ingangsdatum" prefix.</description>
+            <pattern>\bIngangsdatum:\s*\d{2}-\d{2}-\d{4}\b</pattern>
+            <replacement>Ingangsdatum: XXXX</replacement>
+        </rule>
+
+        <!-- Duur -->
+        <rule>
+            <description>Detect and replace durations (e.g., months, years, days).</description>
+            <pattern>\bDuur:\s*\d+\s*(maanden|jaar|dagen)\b</pattern>
+            <replacement>Duur: XXXX</replacement>
+        </rule>
+
+        <!-- Bedrag: Currencies -->
+        <rule>
+            <description>Detect and replace monetary values in Euro or Dollar.</description>
+            <pattern>\b\€\s?\d+[,.]?\d*\b|\b\$\s?\d+[,.]?\d*\b</pattern>
+            <replacement>Bedrag-XXXX</replacement>
+        </rule>
+
+        <!-- Termijn -->
+        <rule>
+            <description>Detect and replace payment or contract terms.</description>
+            <pattern>\bTermijn:\s*\d+\s*(dagen|maanden|jaar)\b</pattern>
+            <replacement>Termijn: XXXX</replacement>
+        </rule>
+
+        <!-- Bedrijf: Bedrijfsnamen -->
+        <rule>
+            <description>Detect and replace company names (optionally with legal entity suffix).</description>
+            <pattern>[A-Z][a-z]+\s[A-Z][a-z]+\s?(B\.V\.|N\.V\.|LLC|Inc\.)?</pattern>
+            <replacement>Bedrijf-XXXX</replacement>
+        </rule>
+
+        <!-- Fallback: Onbekende data -->
+        <rule>
+            <description>Fallback rule for unknown data types.</description>
+            <pattern>.*</pattern>
+            <replacement>UNKNOWN-XXXXX</replacement>
+        </rule>
+    </rules>
+
+    <config>
+        <!-- Language Configuration -->
+        <language>
+            <primary>Dutch</primary>
+            <secondary>English</secondary>
+        </language>
+
+        <!-- Output Configuration -->
+        <output>
+            <preserveStructure>true</preserveStructure>
+            <description>The processed document will maintain the original structure and replace sensitive information as specified.</description>
+        </output>
+    </config>
+</metadataRecognition>
+
