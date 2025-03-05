@@ -62,8 +62,9 @@ We hebben een eenvoudige en duidelijke structuur om prompts te organiseren:
 - **algemeen/**: Prompts die nuttig zijn voor algemene doeleinden (bijv. brainstormen, samenvatten, enz.).
 - **juridisch/**: Prompts gericht op juridische domeinen, zoals contractreview, rechtspraak samenvatten en juridische vragen beantwoorden.
   - **contract_review/**: Analyseer en verbeter juridische contracten.
-  - **rechtspraak/**: Maak samenvattingen van juridische uitspraken en vonnissen.
   - **juridische_vragen/**: Beantwoord veelvoorkomende of complexe juridische vragen.
+  - **rechtspraak/**: Maak samenvattingen van juridische uitspraken en vonnissen.
+  - **wetgeving/**: Maak samenvattingen van wetgeving of stel daar vragen over.
 - **experimenten/**: Prompts die nog verfijnd moeten worden; werk in uitvoering.
 - **sjablonen/**: Basisstructuren om nieuwe prompts mee op te zetten.
 - **voorbeelden/**: Bevat conversaties en resultaten die zijn gegenereerd met behulp van de prompts.

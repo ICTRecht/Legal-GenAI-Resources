@@ -1,0 +1,73 @@
+<DPA_Checklist>
+    <Looptijd>
+        <Goed>
+            <Punt>Specifieke looptijd die overeenkomt met de duur van de verwerking.</Punt>
+            <Punt>Beëindiging mogelijk zodra verwerking niet langer nodig is.</Punt>
+        </Goed>
+        <Fout>
+            <Punt>Geen specifieke looptijd vermeld.</Punt>
+            <Punt>Looptijd langer dan noodzakelijk voor de verwerking zonder geldige reden.</Punt>
+            <Punt>Looptijd afhankelijk van eenzijdige beëindiging door één partij.</Punt>
+            <Punt>Geen afspraken over verlenging of beëindiging van de overeenkomst.</Punt>
+        </Fout>
+    </Looptijd>
+
+    <Definitie_Persoonsgegevens>
+        <Goed>
+            <Punt>Specifieke en limitatieve lijst van te verwerken persoonsgegevens.</Punt>
+            <Punt>Uitsluiting van gegevens die buiten het doel van de verwerking vallen.</Punt>
+        </Goed>
+        <Fout>
+            <Punt>Geen duidelijke definitie van persoonsgegevens.</Punt>
+            <Punt>Definitie omvat gegevens die niet onder AVG vallen.</Punt>
+            <Punt>Definitie is te breed en onduidelijk.</Punt>
+            <Punt>Geen uitzondering voor gegevens die al bekend waren bij de verwerker.</Punt>
+            <Punt>Geen duidelijke bepaling voor mondeling verstrekte gegevens.</Punt>
+        </Fout>
+    </Definitie_Persoonsgegevens>
+
+    <Verwerkingsdoeleinden>
+        <Goed>
+            <Punt>Verwerking uitsluitend voor specifieke en overeengekomen doeleinden.</Punt>
+            <Punt>Geen verwerking buiten de opdracht van de verwerkingsverantwoordelijke.</Punt>
+        </Goed>
+        <Fout>
+            <Punt>Geen beperkingen op verwerkingsdoeleinden opgenomen.</Punt>
+            <Punt>Onbeperkte toestemming voor verwerking.</Punt>
+            <Punt>Geen specifieke beperking op de verwerking in de context van de overeenkomst.</Punt>
+            <Punt>Geen verplichting om verwerking te stoppen na beëindiging van de overeenkomst.</Punt>
+        </Fout>
+    </Verwerkingsdoeleinden>
+
+    <Aansprakelijkheid>
+        <Goed>
+            <Punt>Aansprakelijkheid beperkt tot directe schade.</Punt>
+            <Punt>Specifieke afspraken over de verdeling van aansprakelijkheid.</Punt>
+        </Goed>
+        <Fout>
+            <Punt>Geen aansprakelijkheid opgenomen.</Punt>
+            <Punt>Volledige uitsluiting van aansprakelijkheid voor grove nalatigheid of opzet.</Punt>
+            <Punt>Onredelijk hoge aansprakelijkheidslimieten.</Punt>
+            <Punt>Geen bepaling voor schadevergoeding bij schending.</Punt>
+        </Fout>
+    </Aansprakelijkheid>
+
+    <Rechtsgebied_Jurisdictie>
+        <Goed>
+            <Punt>Toepassing van Nederlands recht.</Punt>
+            <Punt>Bevoegde rechtbank in Nederland.</Punt>
+        </Goed>
+        <Fout>
+            <Punt>Toepassing van buitenlands recht zonder reden.</Punt>
+            <Punt>Rechtsgebied dat geen ervaring heeft met privacywetgeving.</Punt>
+            <Punt>Toepassing van recht dat moeilijk uitvoerbaar is.</Punt>
+            <Punt>Geen forumkeuze opgenomen.</Punt>
+        </Fout>
+    </Rechtsgebied_Jurisdictie>
+
+    <Tabel>
+        <Kleur naam="red" icoon="⚠️" kritisch="true"/>
+        <Kleur naam="orange" icoon="🔶" kritisch="false"/>
+        <Kleur naam="yellow" icoon="⚡" kritisch="false"/>
+    </Tabel>
+</DPA_Checklist>
