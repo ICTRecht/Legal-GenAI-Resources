@@ -154,11 +154,6 @@ git branch -d prompt/{naam-van-je-prompt}  # Verwijder de feature branch lokaal
 **Dank voor je bijdrage!**
 ---
 
-## 📜 Licentie en community
-```
-De prompts zijn te gebruiken onder een CC BY licentie en mogen vrijelijk hergebruikt en aangepast worden.
----
-
 ## 🌐 Community en support
 
 Heb je vragen of wil je feedback geven? Open een [issue](https://github.com/ICTRecht/prompts/issues).
