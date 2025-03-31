@@ -1,5 +1,4 @@
 📌 Overzicht
-
 - Deze prompt laat een considerans (overwegingen) genereren bij een overeenkomst.
 
 🚀 Hoe gebruik je het?
