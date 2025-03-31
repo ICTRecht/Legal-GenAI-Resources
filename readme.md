@@ -110,16 +110,16 @@ Wil je bijdragen aan dit project? Volg dan deze stappen om je wijzigingen correc
 Fork deze repository en clone je fork naar je lokale omgeving.
 
 ```bash
-git clone https://github.com/ICTRecht/prompts.git
+git clone {url van je fork}
 cd prompts
 ```
 
 ### 2. Maak een feature branch
-Werk nooit direct in `master` of `dev`. Maak een nieuwe branch gebaseerd op `dev`:
+Werk nooit direct in `main`. Maak een nieuwe branch gebaseerd op `main`:
 
 ```bash
-git checkout dev
-git pull origin dev  # Zorg dat je up-to-date bent
+git checkout main
+git pull origin main  # Zorg dat je up-to-date bent
 git checkout -b prompt/{naam-van-je-prompt}
 ```
 
@@ -134,7 +134,7 @@ git push origin prompt/{naam-van-je-prompt}
 
 ### 4. Maak een Pull Request aan
 1. Ga naar de [GitHub repo](https://github.com/ICTRecht/prompts).
-2. Open een **Pull Request** van jouw `prompt/{naam-van-je-prompt}` branch naar de `dev` branch.
+2. Open een **Pull Request** van jouw `prompt/{naam-van-je-prompt}` branch naar de `main` branch.
 3. Voeg een duidelijke beschrijving toe van je wijziging.
 
 ### 5. Review en Merge
@@ -146,8 +146,8 @@ git push origin prompt/{naam-van-je-prompt}
 Na het mergen, houd je lokale repository up-to-date:
 
 ```bash
-git checkout dev
-git pull origin dev
+git checkout main
+git pull origin main
 git branch -d prompt/{naam-van-je-prompt}  # Verwijder de feature branch lokaal
 ```
 
