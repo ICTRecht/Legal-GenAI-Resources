@@ -1,5 +1,4 @@
 # 🎯 Doel van de Prompt
-
 Het doel van deze prompt is om een overzicht van een Europese richtlijn of verordening te krijgen, die helpt om er snel inhoudelijk doorheen te navigeren. Doordat je per artikel het onderwerp en relevante overwegingen ziet, kun  je makkelijk context geven bij het onderzoeken van de bepalingen. 
 ---
 

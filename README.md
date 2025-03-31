@@ -52,7 +52,6 @@ We hebben een eenvoudige en duidelijke structuur om prompts te organiseren:
 │   │   ├── rechtspraak/     # Samenvattingen van rechtspraak
 │   │   ├── juridische_vragen/ # Antwoorden op juridische vragen
 │   │   └── ...              # Andere juridische domeinen
-│   ├── experimenten/    # Ongeteste of conceptuele prompts
 │   └── sjablonen/       # Algemene formats of sjablonen voor prompts
 └── voorbeelden/         # Voorbeeldinteracties met prompts
 ```
