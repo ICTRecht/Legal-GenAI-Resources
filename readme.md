@@ -1,4 +1,4 @@
-# 📚 Generative AI Prompts Repository
+# 📚 Legal GenAI Prompts Repository
 
 Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als een gedeelde bron voor het verzamelen, organiseren en delen van prompts die werken met ChatGPT en andere Generative AI (GenAI) systemen en gericht zijn op juridische of ondersteunende taken.
 
@@ -152,11 +152,6 @@ git branch -d prompt/{naam-van-je-prompt}  # Verwijder de feature branch lokaal
 ```
 
 **Dank voor je bijdrage!**
----
-
-## 📜 Licentie en community
-```
-De prompts zijn te gebruiken onder een CC BY licentie en mogen vrijelijk hergebruikt en aangepast worden.
 ---
 
 ## 🌐 Community en support
