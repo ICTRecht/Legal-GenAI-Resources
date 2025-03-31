@@ -137,8 +137,8 @@ git push origin prompt/{naam-van-je-prompt}
 
 ### 5. Review en Merge
 - Het team zal je PR beoordelen en eventueel feedback geven.
-- Zodra goedgekeurd, wordt de wijziging gemerged in `dev`.
-- Het team kan nog mogelijk optimalisaties uitvoereen aan de prompts, waarna wijzigingen ook op de `master` branch zullen worden gepubliceerd.
+- Zodra goedgekeurd, wordt de wijziging gemerged in `main`.
+- Het team kan nog mogelijk optimalisaties uitvoereen aan de prompts, waarna wijzigingen ook op de `main` branch zullen worden gepubliceerd.
 
 ### 6. Synchroniseer je lokale repo
 Na het mergen, houd je lokale repository up-to-date:
