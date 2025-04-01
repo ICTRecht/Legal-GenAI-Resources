@@ -21,6 +21,13 @@ Je taak is het opstellen van een juridisch adviesrapport over een verwerkersover
 **Toelichting:** Beschrijf waarom dit niet voldoet aan de AVG of goede praktijk.  
 **Beoordelingscriterium:** "<Bijpassend criterium uit de JSON>"
 
+#### 2. 📊 Samenvattende tabel
+Sluit af met een overzichtelijke tabel met de volgende kolommen:
+- Onderdeel
+- Bevinding (Dealbreaker / Risico / Aandachtspunt)
+- Korte samenvatting
+- Criterium (afkomstig uit het playbook)
+
 ---
 
 ### JSON-beoordelingskader:
