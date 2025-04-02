@@ -75,23 +75,23 @@ We hebben een eenvoudige en duidelijke structuur om prompts te organiseren:
 Gebruik duidelijke en beschrijvende bestandsnamen, zoals `contract_review_voorbeeld.md` of `rechtspraak_samenvatting.md`.
 
 ### Bestandssjabloon
-Elke prompt moet de volgende structuur volgen:
+Elke prompt wordt in een nieuwe mapje gezet in één van de categorieën in de mappenstructuur. Elke prompt-map bevat:
+- een bestand met de prompt zelf, bijvoorbeeld `dpa_checker_prompt.xml` of `juridische_vraag.txt`;
+- een bestand `readme.md` die context en instructies geeft hoe de prompt de gebruiken. Neem daar op zijn minst het doel van de prompt en de nodige instructies in mee, maar optioneel ook aanvullende tips voor gebruik en een voorbeeldoutput. Dat kan er als volgt uit zien:
 
 ```markdown
 # 🎯 Doel van de Prompt
-Beschrijf het doel van de prompt en waarvoor deze bedoeld is.
+[Beschrijf het doel van de prompt en waarvoor deze bedoeld is.]
 
 ---
 
-## 📝 Prompt
-```
-[Hier plaats je de prompt die kan worden gekopieerd en geplakt.]
-```
+## 📝 Instructies voor gebruik
+[Belangrijke instructies om met de prompt de gewenste output te krijgen]
 
 ---
 
 ## 💡 Tips voor Gebruik
-- Voeg hier tips toe voor het aanpassen of optimaliseren van de prompt.
+[Voeg hier tips toe voor het aanpassen of optimaliseren van de prompt.]
 
 ---
 
