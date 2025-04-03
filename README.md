@@ -131,7 +131,7 @@ git push origin prompt/{naam-van-je-prompt}
 ```
 
 ### 4. Maak een Pull Request aan
-1. Ga naar de [GitHub repo](https://github.com/ICTRecht/prompts).
+1. Ga naar de [GitHub repo](https://github.com/ICTRecht/Legal-GenAI-Resources).
 2. Open een **Pull Request** van jouw `prompt/{naam-van-je-prompt}` branch naar de `main` branch.
 3. Voeg een duidelijke beschrijving toe van je wijziging.
 
@@ -154,4 +154,4 @@ git branch -d prompt/{naam-van-je-prompt}  # Verwijder de feature branch lokaal
 
 ## 🌐 Community en support
 
-Heb je vragen of wil je feedback geven? Open een [issue](https://github.com/ICTRecht/prompts/issues).
+Heb je vragen of wil je feedback geven? Open een [issue](https://github.com/ICTRecht/Legal-GenAI-Resources/issues).
