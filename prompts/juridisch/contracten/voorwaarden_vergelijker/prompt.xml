@@ -1,0 +1,159 @@
+<VoorwaardenAnalyse>
+  <Instructie>
+    Analyseer en vergelijk de twee geüploade documenten met algemene (inkoop)voorwaarden. Identificeer overeenkomsten, conflicten en complementaire bepalingen tussen beide documenten. Presenteer de volledige analyse in één gestructureerd markdown-rapport volgens het gespecificeerde formaat hieronder. Het rapport moet alle gevraagde secties bevatten en moet direct bruikbaar zijn zonder verdere bewerking.
+  </Instructie>
+  
+  <Parameters>
+    <TaalVoorkeur>Nederlands</TaalVoorkeur>
+    <DetailNiveau>Gedetailleerd</DetailNiveau> <!-- Opties: Beknopt/Gedetailleerd/Uitgebreid -->
+    <RapportFormaat>Markdown</RapportFormaat>
+    <FocusGebieden>
+      <Gebied>Aansprakelijkheid</Gebied>
+      <Gebied>Betalingstermijnen</Gebied>
+      <Gebied>Intellectueel Eigendom en Licenties</Gebied>
+      <Gebied>Geheimhouding</Gebied>
+      <Gebied>Garantiebepalingen</Gebied>
+      <Gebied>Duur en Einde</Gebied>
+      <Gebied>Exitbepaling</Gebied>
+      <Gebied>Verwerking van persoonsgegevens</Gebied>
+      <!-- Voeg meer specifieke gebieden toe indien gewenst -->
+    </FocusGebieden>
+    <RisicoAnalyse>Ja</RisicoAnalyse> <!-- Ja/Nee -->
+  </Parameters>
+  
+  <OutputFormaat>
+    <RapportStructuur>
+      <Header>
+        # Vergelijkingsanalyse Voorwaarden
+        ## [NAAM INKOOPVOORWAARDEN] vs. [NAAM ALGEMENE VOORWAARDEN]
+        **Datum analyse:** [HUIDIGE DATUM]
+        
+        ---
+      </Header>
+      
+      <InhoudsOpgave>
+        ## Inhoudsopgave
+        - [1. Samenvatting](#1-samenvatting)
+        - [2. Overeenkomsten](#2-overeenkomsten)
+        - [3. Conflicten](#3-conflicten)
+        - [4. Complementaire Bepalingen](#4-complementaire-bepalingen)
+        - [5. Juridische Risico's](#5-juridische-risicos)
+        - [6. Aanbevelingen](#6-aanbevelingen)
+        - [7. Disclaimer](#7-disclaimer)
+      </InhoudsOpgave>
+    </RapportStructuur>
+    
+    <Sectie>
+      <Titel>Samenvatting</Titel>
+      <Beschrijving>Geef een beknopte samenvatting van de belangrijkste verschillen en overeenkomsten tussen beide documenten.</Beschrijving>
+      <MarkdownFormat>
+        ## 1. Samenvatting
+        
+        [Voeg hier een beknopte samenvatting toe van maximaal 300 woorden die de essentie van de vergelijking vat]
+      </MarkdownFormat>
+    </Sectie>
+    
+    <Sectie>
+      <Titel>Overeenkomsten</Titel>
+      <Beschrijving>Lijst van bepalingen die in beide documenten voorkomen en inhoudelijk overeenkomen, met de relevante artikelnummers uit beide documenten.</Beschrijving>
+      <MarkdownFormat>
+        ## 2. Overeenkomsten
+        
+        | Onderwerp | [NAAM INKOOPVOORWAARDEN] | [NAAM ALGEMENE VOORWAARDEN] | Beschrijving |
+        |-----------|--------------------------|----------------------------|--------------|
+        | [Onderwerp 1] | Art. X.X | Art. Y.Y | [Beschrijving overeenkomst] |
+        | [Onderwerp 2] | Art. X.X | Art. Y.Y | [Beschrijving overeenkomst] |
+      </MarkdownFormat>
+    </Sectie>
+    
+    <Sectie>
+      <Titel>Conflicten</Titel>
+      <Beschrijving>Lijst van bepalingen die tegenstrijdig zijn, met duidelijke uitleg waar het conflict uit bestaat, evenals de relevante artikelnummers.</Beschrijving>
+      <MarkdownFormat>
+        ## 3. Conflicten
+        
+        | Onderwerp | [NAAM INKOOPVOORWAARDEN] | [NAAM ALGEMENE VOORWAARDEN] | Conflict | Prioriteit |
+        |-----------|--------------------------|----------------------------|----------|------------|
+        | [Onderwerp 1] | Art. X.X: [Tekst] | Art. Y.Y: [Tekst] | [Beschrijving conflict] | Hoog/Midden/Laag |
+        | [Onderwerp 2] | Art. X.X: [Tekst] | Art. Y.Y: [Tekst] | [Beschrijving conflict] | Hoog/Midden/Laag |
+      </MarkdownFormat>
+    </Sectie>
+    
+    <Sectie>
+      <Titel>Complementaire Bepalingen</Titel>
+      <Beschrijving>Bepalingen die in het ene document voorkomen maar niet in het andere, en die de andere voorwaarden aanvullen zonder in conflict te zijn.</Beschrijving>
+      <MarkdownFormat>
+        ## 4. Complementaire Bepalingen
+        
+        | Onderwerp | Voorkomt in | Artikelnummer | Beschrijving | Relevantie |
+        |-----------|-------------|---------------|--------------|------------|
+        | [Onderwerp 1] | [Document naam] | Art. X.X | [Beschrijving bepaling] | Hoog/Midden/Laag |
+        | [Onderwerp 2] | [Document naam] | Art. Y.Y | [Beschrijving bepaling] | Hoog/Midden/Laag |
+      </MarkdownFormat>
+    </Sectie>
+    
+    <Sectie>
+      <Titel>Juridische Risico's</Titel>
+      <Beschrijving>Analyse van potentiële juridische risico's die voortvloeien uit de combinatie van beide voorwaardensets.</Beschrijving>
+      <MarkdownFormat>
+        ## 5. Juridische Risico's
+        
+        ### Geïdentificeerde risico's:
+        
+        1. **[Risico 1]**
+           - **Ernst:** Hoog/Midden/Laag
+           - **Beschrijving:** [Uitleg van het risico]
+           - **Betrokken artikelen:** [NAAM INKOOPVOORWAARDEN] Art. X.X, [NAAM ALGEMENE VOORWAARDEN] Art. Y.Y
+        
+        2. **[Risico 2]**
+           - **Ernst:** Hoog/Midden/Laag
+           - **Beschrijving:** [Uitleg van het risico]
+           - **Betrokken artikelen:** [NAAM INKOOPVOORWAARDEN] Art. X.X, [NAAM ALGEMENE VOORWAARDEN] Art. Y.Y
+      </MarkdownFormat>
+    </Sectie>
+    
+    <Sectie>
+      <Titel>Aanbevelingen</Titel>
+      <Beschrijving>Concrete suggesties voor het oplossen van conflicten en het versterken van de juridische positie.</Beschrijving>
+      <MarkdownFormat>
+        ## 6. Aanbevelingen
+        
+        ### Prioriteit Hoog:
+        
+        1. **[Aanbeveling 1]**
+           - **Onderwerp:** [Onderwerp]
+           - **Aanbeveling:** [Concrete aanbeveling]
+           - **Rationale:** [Waarom deze aanbeveling]
+        
+        ### Prioriteit Midden:
+        
+        1. **[Aanbeveling 2]**
+           - **Onderwerp:** [Onderwerp]
+           - **Aanbeveling:** [Concrete aanbeveling]
+           - **Rationale:** [Waarom deze aanbeveling]
+        
+        ### Prioriteit Laag:
+        
+        1. **[Aanbeveling 3]**
+           - **Onderwerp:** [Onderwerp]
+           - **Aanbeveling:** [Concrete aanbeveling]
+           - **Rationale:** [Waarom deze aanbeveling]
+      </MarkdownFormat>
+    </Sectie>
+    
+    <Sectie>
+      <Titel>Disclaimer</Titel>
+      <MarkdownFormat>
+        ## 7. Disclaimer
+        
+        *Deze analyse is geen juridisch advies. De interpretaties zijn gebaseerd op algoritmische verwerking van de documenten en kunnen context of nuance missen. Raadpleeg altijd een gekwalificeerd juridisch adviseur voor definitief advies over uw specifieke situatie.*
+        
+        *Generatieve AI-systemen kunnen fouten maken of bepaalde aspecten over het hoofd zien. Controleer altijd kritisch de resultaten.*
+      </MarkdownFormat>
+    </Sectie>
+  </OutputFormaat>
+  
+  <Afsluiting>
+    Genereer een volledig rapport in markdown-formaat volgens bovenstaande structuur zonder onderbreking. Zorg ervoor dat alle tabellen en secties volledig zijn ingevuld met relevante informatie uit de documenten. Behoud de formatting zoals aangegeven.
+  </Afsluiting>
+</VoorwaardenAnalyse>
