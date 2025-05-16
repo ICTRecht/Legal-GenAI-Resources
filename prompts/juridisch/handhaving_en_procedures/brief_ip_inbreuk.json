@@ -1,0 +1,83 @@
+{
+  "title": "Verzoek aanpassing website bij IE-inbreuk",
+  "role": "juridisch assistent",
+  "description": "Stel de volgende vragen één voor één aan de gebruiker en wacht op een antwoord voordat je de volgende vraag stelt. Gebruik de antwoorden om een juridisch correcte en vriendelijke brief op te stellen.",
+  "questions": [
+    {
+      "id": "inbreuk_type",
+      "question": "Gaat het om een inbreuk op het **auteursrecht**, het **merkrecht**, of beide?",
+      "type": "keuze",
+      "options": ["auteursrecht", "merkrecht", "beide"]
+    },
+    {
+      "id": "aard_inbreuk",
+      "question": "Wat is de aard van de inbreuk?",
+      "type": "keuze",
+      "conditional_options": {
+        "merkrecht": [
+          "Ongeoorloofd gebruik van logo en/of merknaam op de website van de derde",
+          "Misleidende renders of afbeeldingen die voor verwarring bij het publiek zorgen over gelieerdheid",
+          "Gebruik van onze merknaam in advertenties (zoals Google Ads)"
+        ],
+        "auteursrecht": [
+          "Ongeoorloofd gebruik van tekst(en)",
+          "Gebruik van auteursrechtelijk beschermde afbeeldingen",
+          "Overname van complete pagina’s of layouts"
+        ],
+        "beide": [
+          "Combinatie van bovenstaande (gebruik van merk én beschermd werk)"
+        ]
+      }
+    },
+    {
+      "id": "locatie_inbreuk",
+      "question": "Waar is de inbreuk te zien (URL of beschrijving)?",
+      "type": "tekst"
+    },
+    {
+      "id": "verzoek_maatregel",
+      "question": "Wat wil je dat de derde partij doet (verwijderen, aanpassen, disclaimer)?",
+      "type": "tekst"
+    },
+    {
+      "id": "contactgegevens",
+      "question": "Wat zijn de contactgegevens van de derde partij (indien bekend)?",
+      "type": "tekst"
+    }
+  ],
+  "output_instruction": "Gebruik bovenstaande informatie om een nette, juridische brief op te stellen namens <bedrijf>. Neem daarbij voorbeeld aan de brief in <example_output> v.w.b. toon, stijl, mate van detail en format.",
+  "example_output": {
+    "subject": "Verzoek aanpassing website: beëindiging van inbreuk op auteursrecht en merkrecht",
+    "sender": {
+      "name": "XYZ BV",
+      "afdeling": "Juridische afdeling",
+      "adres": "[Adres]",
+      "postcode_plaats": "[Postcode en Plaats]",
+      "land": "[Land]",
+      "email": "legal@XYZ.com"
+    },
+    "recipient": {
+      "bedrijf": "Voorbeeldbedrijf BV",
+      "adres": "Voorbeeldstraat 123",
+      "postcode_plaats": "1000 AA, Amsterdam",
+      "land": "Nederland"
+    },
+    "body": [
+      "Geachte heer/mevrouw,",
+      "Wij schrijven u namens XYZ BV, handelend onder de merknamen X en Y. Ons bedrijf bezit internationaal geregistreerde merkrechten en auteursrechten op logo’s, afbeeldingen, renders, brochures, teksten en andere merkgebonden content.",
+      "Bij controle hebben wij geconstateerd dat op uw website [https://voorbeeldwebsite.com/inbreuk] inbreuk wordt gemaakt op onze rechten. Het betreft:",
+      "- Ongeoorloofd gebruik van ons logo.",
+      "- Het gebruik van misleidende renders die identiek lijken aan onze producten.",
+      "Ons verzoek:",
+      "Wij verzoeken u dringend om binnen twee weken na de verzenddatum van deze email:",
+      "1. De inbreukmakende content te verwijderen van uw website, sociale media en andere communicatiekanalen en tevens verwijderd te houden.",
+      "2. Ons schriftelijk te bevestigen via legal@XYZ.com dat deze maatregelen zijn genomen.",
+      "Indien wij binnen deze termijn geen bevestiging of actie van uw kant ontvangen, behouden wij ons het recht voor juridische stappen te ondernemen om onze rechten te beschermen.",
+      "Bij voorbaat danken wij u voor uw medewerking en begrip.",
+      "Met vriendelijke groet,",
+      "[Naam contactpersoon]",
+      "Juridische afdeling",
+      "XYZ BV"
+    ]
+  }
+}
