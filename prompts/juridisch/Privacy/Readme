@@ -1,4 +1,4 @@
-⚙️ Functionaliteit
+📌 Overzicht
 
 De prompt genereert een DPIA-rapport bestaande uit:
 
@@ -7,6 +7,23 @@ De prompt genereert een DPIA-rapport bestaande uit:
 - Toepasbare Privacy-Enhancing Technologies (PETs)
 - AVG-verwijzingen en verwerkingscontext
 - Tekstuele toelichtingen bij elke tabel
+
+🚀 Hoe gebruik je het?
+
+Kopieer de prompt naar een LLM naar keuze, druk op enter en laat AI het werk doen (zie ook kopje 'Vereiste input van de gebruiker'). Controleer de gegenereerde beoordeling en pas deze zo nodig aan.
+
+Deze prompt is onder andere getest in Claude, ChatGPT en Legora.
+
+🛠 Aanpassingen
+
+Je kunt de prompt eenvoudig naar een op maat gemaakte DPIA aanpassen. Kopieer de prompt en het playbook in de interface van het taalmodel en vraag de AI de prompt aan te passen conform het playbook. Controleer uiteraard altijd de output!
+Het format van de output kan eventueel worden gewijzigd naar Markdown, XML JSON.
+
+📖 Voorwaarden
+
+De prompt is bedoeld als ondersteunend hulpmiddel en vervangt geen juridisch advies.
+Controleer altijd de output voordat je deze gebruikt in juridische documenten.
+Wees terughoudend met het gebruik van bedrijfs- en persoonsgegevens.
 
 
 ✅ Vereiste input van de gebruiker
@@ -52,8 +69,3 @@ Elke sectie bevat:
 - Gestructureerde tabellen
 - Tekstuele toelichting
 - Juridische verankering
-
-
-🔒 Disclaimer
-
-Deze prompt is bedoeld ter ondersteuning van juridische analyses. De uitkomst dient altijd door een jurist of privacy professional gecontroleerd te worden alvorens implementatie.
