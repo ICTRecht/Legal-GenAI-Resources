@@ -1,0 +1,59 @@
+⚙️ Functionaliteit
+
+De prompt genereert een DPIA-rapport bestaande uit:
+
+- Risico-identificatie en -classificatie (met scoringsmatrix)
+- Aanbevolen mitigaties (juridisch, technisch, organisatorisch)
+- Toepasbare Privacy-Enhancing Technologies (PETs)
+- AVG-verwijzingen en verwerkingscontext
+- Tekstuele toelichtingen bij elke tabel
+
+
+✅ Vereiste input van de gebruiker
+
+Bij het gebruiker van de prompt ontvangt de gebruiker enkele vragen retour:
+
+1. Beschrijving van de situatie
+   Geef aan wat het doel en de context is van de voorgenomen gegevensverwerking.
+
+2. Gebruikte technologie of systemen 
+   Noem alle relevante technische elementen (bijv. cloudopslag, sensoren, AI-modules).
+
+3. (Optioneel) Upload van ondersteunende documenten  
+   Denk aan beleidsstukken, contracten, technische beschrijvingen.
+
+Zonder deze input start de analyse niet.
+
+
+🧠 Let the magic begin
+
+Na beantwoording van de twee vragen bepaalt de AI automatisch:
+
+- Het type persoonsgegevens
+- De schaal en gevoeligheid van verwerking
+- De specifieke risico’s en hun impact
+- Relevante AVG-artikelen
+- Passende mitigaties en PETs
+
+
+
+🧩 Structuur van het gegenereerde rapport
+
+Het rapport bestaat uit de volgende secties:
+
+1. Inleiding
+2. Beschrijving van de verwerking
+3. Geconstateerde privacyrisico’s
+4. Aanbevolen mitigatiemaatregelen
+5. Privacy-Enhancing Technologies (PETs)
+6. Bronvermeldingen
+
+Elke sectie bevat:
+- Gestructureerde tabellen
+- Tekstuele toelichting
+- Juridische verankering
+
+
+🔒 Disclaimer
+
+Deze prompt is bedoeld ter ondersteuning van juridische analyses. De uitkomst dient altijd door een jurist of privacy professional gecontroleerd te worden alvorens implementatie.
