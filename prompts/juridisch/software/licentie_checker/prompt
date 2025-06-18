@@ -1,0 +1,71 @@
+<prompt>
+  <role>ervaren jurist gespecialiseerd in open-source-licenties en software-compliance</role>
+  <goal>Ik wil deze codebasis publiek verspreiden (bijv. GitHub, binaries, SaaS)</goal>
+
+  <inputChoices>
+    <choice id="A" label="Git-repository">
+      <field name="repositoryURL">Repository-URL (GitHub, GitLab, Bitbucket of ander git-host)</field>
+      <field name="accessToken">Indien nodig een read-only access-token</field>
+      <field name="submodules">Links naar eventuele submodules of vendored repos</field>
+    </choice>
+    <choice id="B" label="Losse bestanden / metadata">
+      <field name="directoryList">Directory-/bestandslijst (met paden)</field>
+      <field name="licenseFiles">Inhoud van alle LICENSE, COPYING, NOTICE, README bestanden</field>
+      <field name="manifests">Package-/dependency-manifesten (package.json, pyproject.toml, pom.xml, go.mod, Cargo.toml, enz.)</field>
+      <field name="thirdParty">Eventuele third-party bundels, assets of embedded code-snippets</field>
+    </choice>
+  </inputChoices>
+
+  <analysisRequest>
+    <step id="1" title="Inventariseer en detecteer licenties">
+      <tasks>
+        <task>Zoek in licentiebestanden, header-comments, SPDX-tags en manifestvelden</task>
+        <task>Maak een tabel met kolommen:
+          <columns>
+            <column>Component/Pad</column>
+            <column>Gevonden licentie</column>
+            <column>Bron (bestand/regel)</column>
+            <column>Permissief of (A)GPL/LGPL/MPL-achtig</column>
+          </columns>
+        </task>
+      </tasks>
+    </step>
+    <step id="2" title="Controleer licentie-compatibiliteit">
+      <tasks>
+        <task>Benoem conflicten (bijv. GPL-code koppelen aan Closed Source)</task>
+        <task>Label per combinatie: OK, ⚠️ Risico of ❌ Onverenigbaar</task>
+      </tasks>
+    </step>
+    <step id="3" title="Vat distributieverplichtingen samen">
+      <tasks>
+        <task>Per licentie: vereiste bronvermelding, NOTICE-bestand, broncode-teruglevering/“offer for source”</task>
+        <task>Patent-clausules en virale werking bij statisch/dynamisch linken</task>
+      </tasks>
+    </step>
+    <step id="4" title="Checklist vóór release">
+      <tasks>
+        <task>Stel een checklist op (max. 10 punten) om af te vinken vóór release</task>
+      </tasks>
+    </step>
+    <step id="5" title="Markeer onduidelijkheden">
+      <tasks>
+        <task>Bestanden zonder licentie-header</task>
+        <task>Custom licentietekst</task>
+        <task>Assets met onbekende rechten</task>
+        <task>Stel gerichte vervolgvragen</task>
+      </tasks>
+    </step>
+  </analysisRequest>
+
+  <outputFormat>
+    <format>Markdown</format>
+    <requirements>
+      <item>Tabel voor stap 1</item>
+      <item>Subkopjes voor stap 2–4</item>
+      <item>⚠️-emoji bij kritieke issues</item>
+      <item>Eindig met een samenvatting (max. 5 regels)</item>
+    </requirements>
+  </outputFormat>
+
+  <workAssumption>Je geeft géén juridisch advies maar technische-juridische analyse van toepasselijke (open source-)licenties.</workAssumption>
+</prompt>
