@@ -55,7 +55,7 @@ Belangrijk: Het `JSON-beoordelingskader` is leidend voor de kwalificatie.
 Per <Categorie>
 **Beoordeling:** 🔴 Kritiek punt / 🟠 Risico / ⚡ Aandachtspunt
 **Toelichting:** Beschrijf waarom dit niet voldoet aan de AVG of goede praktijk.  
-**Beoordelingscriterium:** "<Bijpassend criterium uit het beoordelingskaderdat als JSON is meegeleverd>"
+**Beoordelingscriterium:** Noem hier het criterium uit de JSON. **Belangrijk: noem alleen een criterium als dit direct en logisch van toepassing is. Als er geen passend criterium is, laat dit veld dan leeg of schrijf "N.v.t.".**
 
 📊 Samenvattende tabel
 Sluit af met een overzichtelijke tabel met de volgende kolommen:
