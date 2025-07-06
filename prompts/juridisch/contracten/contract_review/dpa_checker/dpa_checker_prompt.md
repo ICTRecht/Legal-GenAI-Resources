@@ -69,7 +69,7 @@ Sluit af met een overzichtelijke tabel met de volgende kolommen:
 -   Onderdeel
 -   Bevinding (🔴 Kritiek punt / 🟠 Risico / ⚡ Aandachtspunt)
 -   Korte samenvatting
--   Criterium (afkomstig uit het playbook)
+-   Criterium (afkomstig uit het beoordelingskader)
 
 #### **Voorbeeld van de gewenste output-structuur**
 

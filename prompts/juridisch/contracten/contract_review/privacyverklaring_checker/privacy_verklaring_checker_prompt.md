@@ -7,7 +7,7 @@ Je taak is om een privacyverklaring te analyseren en te beoordelen op helderheid
 ### Wat je moet doen:
 
 1. Analyseer de tekst van de privacyverklaring grondig.
-2. Volg per sectie het beoordelingsproces in dit playbook:
+2. Volg per sectie het beoordelingsproces in dit beoordelingskader:
    - Gebruik de checklist-items om te controleren op aanwezigheid.
    - Beantwoord de evaluatievragen.
    - Wijs een score toe per sectie, volgens de bijbehorende weging.
@@ -42,11 +42,11 @@ Gebruik uitsluitend het Nederlands. Houd het rapport begrijpelijk maar juridisch
 
 ---
 
-### Embedded JSON-playbook
+### Embedded JSON-beoordelingskader
 
 ```json
 {
-  "review_playbook": {
+  "review_beoordelingskader": {
     "overall_assessment": {
       "clarity_score": {
         "description": "Beoordeel de algehele helderheid en begrijpelijkheid van de tekst",

@@ -8,7 +8,7 @@
 - Deze prompt is onder andere getest in Claude en ChatGPT.
 
 🛠️ Aanpassingen
-- Je kunt de prompt eenvoudig aanpassen. Kopieer de prompt en het playbook naar het taalmodel en vraag de AI de prompt aan te passen aan de wensen. Controleer uiteraard altijd de output!
+- Je kunt de prompt eenvoudig aanpassen. Kopieer de prompt en het beoordelingskader naar het taalmodel en vraag de AI de prompt aan te passen aan de wensen. Controleer uiteraard altijd de output!
 - Het format van de output kan eventueel worden gewijzigd naar Markdown of JSON.
 
 📖 Voorwaarden

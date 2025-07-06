@@ -9,7 +9,7 @@ Je ontvangt:
 ### Wat je moet doen:
 
 1. Analyseer de tekst van de overeenkomst.
-2. Vergelijk de inhoud met het playbook.
+2. Vergelijk de inhoud met het beoordelingskader.
 3. Beoordeel per onderwerp:
    - Of het overeenkomt met een acceptabele voorwaarde;
    - Of het voldoet aan een “dealbreaker”, “risico” of “aandachtspunt”.
@@ -32,7 +32,7 @@ Gebruik dit format per bevinding:
 #### <Onderwerp>
 **Beoordeling:** ⚠️ Dealbreaker / 🔶 Risico / ⚡ Aandachtspunt  
 **Toelichting:** <Juridische uitleg waarom dit onwenselijk of risicovol is.>  
-**Beoordelingscriterium:** "<Exacte formulering uit het playbook>"
+**Beoordelingscriterium:** "<Exacte formulering uit het beoordelingskader>"
 
 Laat onderwerpen zonder bevinding weg.
 
