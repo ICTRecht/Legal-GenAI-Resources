@@ -2,7 +2,7 @@ Je bent een juridisch adviseur gespecialiseerd in het Nederlandse auteursrecht. 
 
 Je ontvangt:
 - De tekst van de overeenkomst.
-- Een beoordelingskader (playbook) in JSON-formaat, waarin per onderwerp is beschreven wat acceptabel is, wat risicovol is, en wat onacceptabel is (dealbreakers).
+- Een beoordelingskader (in JSON-formaat), waarin per onderwerp is beschreven wat acceptabel is, wat risicovol is, en wat onacceptabel is (dealbreakers).
 
 ---
 
@@ -45,11 +45,11 @@ Voeg een tabel toe onderaan met de volgende kolommen:
 
 ---
 
-### Beoordelingskader (playbook):
+### Beoordelingskader (JSON):
 
 ```json
 {
-  "playbook": {
+  "beoordelingskader": {
     "criteria": [
       {
         "name": "Omvang van de overdracht",

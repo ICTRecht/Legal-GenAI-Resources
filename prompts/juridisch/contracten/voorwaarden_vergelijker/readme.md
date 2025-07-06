@@ -1,9 +1,9 @@
 ## 📌 Overzicht
-De Voorwaardenvergelijker is een geavanceerde prompt die u kunt gebruiken met AI-systemen zoals Claude of ChatGPT om juridische documenten systematisch te vergelijken. Deze tool is specifiek ontworpen om inkoopvoorwaarden en algemene voorwaarden naast elkaar te analyseren en biedt een gestructureerd rapport waarin overeenkomsten, conflicten en complementaire bepalingen duidelijk worden weergegeven.
+De Voorwaardenvergelijker is een geavanceerde prompt die je kunt gebruiken met AI-systemen zoals Claude of ChatGPT om juridische documenten systematisch te vergelijken. Deze tool is specifiek ontworpen om inkoopvoorwaarden en algemene voorwaarden naast elkaar te analyseren en biedt een gestructureerd rapport waarin overeenkomsten, conflicten en complementaire bepalingen duidelijk worden weergegeven.
 
 ## 🚀 Hoe gebruik je het?
 ### Stap 1: Voorbereiding
-Zorg dat je beide documenten die je wilt vergelijken in een doorzoekbaar formaat heeft:
+Zorg dat je beide documenten die je wilt vergelijken in een doorzoekbaar formaat hebt:
 - PDF met machine-leesbare tekst (geen scans)
 - Word-documenten (.docx)
 - Tekstbestanden (.txt)
@@ -25,11 +25,11 @@ Zorg dat je beide documenten die je wilt vergelijken in een doorzoekbaar formaat
    ```
 
 ### Stap 3: Documenten uploaden
-1. Open ChatGPT, Claude of andere vergelijkbare tool die bijlages ondersteunt in je browser
+1. Open ChatGPT, Claude of andere vergelijkbare tool die bijlagen ondersteunt in je browser
 2. Upload beide documenten naar de chatinterface:
 
 ### Stap 4: Prompt indienen
-1. Voeg de prompt.xml ook als bijlage tool.
+1. Voeg de prompt.xml ook als bijlage toe.
 2. Voeg een korte instructie toe, bijvoorbeeld: "Volg de prompt uit de XML."
 3. Verzend je bericht
 
@@ -60,4 +60,4 @@ In de prompt kun je de rapportage-opties aanpassen:
 ## 📖 Voorwaarden
 - De prompt is bedoeld als ondersteunend hulpmiddel en vervangt geen juridisch advies.
 - Controleer altijd de output voordat je deze gebruikt in juridische documenten.
-- Wees terughoudend met het uploaden van bedrijfs- en persoonsgegevens.
+- Wees voorzichtig met het verwerken van persoonsgegevens én bedrijfsgegevens. Vermijd het uploaden van gevoelige informatie naar online AI-diensten. Gebruik bij voorkeur een Local LLM voor maximale privacy.

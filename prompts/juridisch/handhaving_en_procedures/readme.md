@@ -1,5 +1,5 @@
 ## 📌 Overzicht
-Deze prompt is ontworpen om snel en zorgvuldig een juridische sommatiebrief op te stellen bij een vermeende inbreuk op intellectuele eigendomsrechten, (auteursrecht of merkrecht). De prompt stelt je in staat om op basis van concrete feiten en bewijs op gestructureerde wijze een conceptbrief te genereren richting de vermeende inbreukmaker. Het eindresultaat is een juridische conceptbrief met een professionele toon, waarin duidelijk wordt aangegeven wat de aard van de inbreuk is, wat de juridische grondslag is, en welke acties worden verlangd (zoals het staken van de inbreuk, schadevergoeding of een verklaring van rechtmatigheid).
+Deze prompt is ontworpen om snel en zorgvuldig een juridische sommatiebrief op te stellen bij een vermeende inbreuk op intellectuele eigendomsrechten (auteursrecht of merkrecht). De prompt stelt je in staat om op basis van concrete feiten en bewijs op gestructureerde wijze een conceptbrief te genereren richting de vermeende inbreukmaker. Het eindresultaat is een juridische conceptbrief met een professionele toon, waarin duidelijk wordt aangegeven wat de aard van de inbreuk is, wat de juridische grondslag is, en welke acties worden verlangd (zoals het staken van de inbreuk, schadevergoeding of een verklaring van rechtmatigheid).
 
 ## 🚀 Hoe gebruik je het?
 1. **Open de prompt in je tool naar keuze** zoals ChatGPT, Claude, Copilot of Gemini.
@@ -15,9 +15,9 @@ Je kunt de prompt eenvoudig aanpassen naar je specifieke behoeften:
 - **Rechtsgebied uitbreiden**: Voeg andere IE-rechten toe, zoals modellenrecht of handelsnaamrecht.
 - **Taal**: Geef aan dat de output in een andere taal moet zijn, zoals Engels of Duits, of dat de tool dezelfde brief direct in meerdere talen genereert.
 
-Voor geavanceerde gebruikers: overweeg het gebruik van parameterisatie of templates binnen je AI-tool om standaardgegevens automatisch in te vullen. Je kunt deze prompt ook gebruiken als basisprompt vooor bijvoorbeeld een custom GPT, waarbij je middels je prompt een standaard hanteert binnen je organisatie.
+Voor geavanceerde gebruikers: overweeg het gebruik van parameterisatie of templates binnen je AI-tool om standaardgegevens automatisch in te vullen. Je kunt deze prompt ook gebruiken als basisprompt voor bijvoorbeeld een custom GPT, waarbij je middels je prompt een standaard hanteert binnen je organisatie.
 
 ## 📖 Voorwaarden
 - De prompt is bedoeld als ondersteunend hulpmiddel en vervangt geen juridisch advies.
 - Controleer altijd de output voordat je deze gebruikt in juridische documenten.
-- Wees terughoudend met het uploaden van bedrijfs- en persoonsgegevens.
+- Wees voorzichtig met het verwerken van persoonsgegevens én bedrijfsgegevens. Vermijd het uploaden van gevoelige informatie naar online AI-diensten. Gebruik bij voorkeur een Local LLM voor maximale privacy.
