@@ -1,6 +1,8 @@
 # 🎯 Doel van de Prompt
-Het doel van deze prompt is om een overzicht van een Europese richtlijn of verordening te krijgen, die helpt om er snel inhoudelijk doorheen te navigeren. Doordat je per artikel het onderwerp en relevante overwegingen ziet, kun  je makkelijk context geven bij het onderzoeken van de bepalingen. 
+Het doel van deze prompt is om een overzicht van een Europese richtlijn of verordening te krijgen, die helpt om er snel inhoudelijk doorheen te navigeren. Doordat je per artikel het onderwerp en relevante overwegingen ziet, kun je makkelijk context geven bij het onderzoeken van de bepalingen. 
 ---
+
+> **Let op:** Wees voorzichtig met het verwerken van persoonsgegevens, maar ook bedrijfsgegevens. Gebruik het liefste een Local LLM.
 
 ## 📝 Prompt
 ```
