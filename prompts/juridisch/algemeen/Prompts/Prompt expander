@@ -1,4 +1,4 @@
-<legalAnswerPrompt version="2.0">
+<legalAnswerPrompt version="3.0">
   <input>
     <!-- Laat leeg of vul in. Als leeg: gebruik de (bovenstaande) gebruikersvraag als userQuestion. -->
     <userQuestion></userQuestion>
