@@ -4,11 +4,11 @@ Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als 
 
 Naast deze repository hebben we vanuit ICTRecht nog enkele andere openbare bronnen rondom GenAI:
 
-[Factsheet: 'De kunst van het prompten'](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/Factsheet%20prompttrucs%20voor%20juristen.pdf)
-[Onderzoek: 'Kun je AI vertrouwen voor juridisch werk?'](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/AI-onderzoek%202025.pdf)
-[Onderzoek: 'AI tooling voor de juridische professional'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Onderzoek/AI-tooling%20voor%20de%20legal%20professionals/Onderzoek%20AI-tooling%20voor%20de%20legal%20professionals.pdf)
-[Factsheet 'Richtlijnen gebruik LLM's'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Richtlijnen/ICTRECHT%20ChatGPT%20Richtlijnen.pdf)
-[Factsheet: 'Hoe gebruiken wij ChatGPT'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Hoe%20wij%20ChatGPT%20gebruiken.pdf)
+[Factsheet: 'De kunst van het prompten'](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/Factsheet%20prompttrucs%20voor%20juristen.pdf)  
+[Onderzoek: 'Kun je AI vertrouwen voor juridisch werk?'](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/AI-onderzoek%202025.pdf)  
+[Onderzoek: 'AI tooling voor de juridische professional'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Onderzoek/AI-tooling%20voor%20de%20legal%20professionals/Onderzoek%20AI-tooling%20voor%20de%20legal%20professionals.pdf)  
+[Factsheet 'Richtlijnen gebruik LLM's'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Richtlijnen/ICTRECHT%20ChatGPT%20Richtlijnen.pdf)  
+[Factsheet: 'Hoe gebruiken wij ChatGPT'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Hoe%20wij%20ChatGPT%20gebruiken.pdf)  
 [Factsheet: 'CustomGPT's'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Factsheets/Factsheet%20-%20Custom%20GPTs.pdf)
 
 ---
