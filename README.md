@@ -23,7 +23,7 @@ Naast deze repository hebben we vanuit ICTRecht nog enkele andere openbare bronn
    - Sommige prompts bevatten specifieke instructies of zijn geschikt voor specifieke modellen, lees in dat geval het Readme bestand voor aanvullende informatie.
 
 3. **Aanpassen naar eigen wens**
-   - Heb je een prompt gevonden die je graag wil aanpassen naar een specifieke situatie, zoals het invoegen van een bedrijfsspecifiek playbook? Kopieer de prompt dan samen met het playbook in een AI en vraag het om de prompt aan te passen naar de specifieke situatie. De gestructureerde prompt zal aangepast worden zonder de opzet aan te passen.
+   - Heb je een prompt gevonden die je graag wil aanpassen naar een specifieke situatie, zoals het invoegen van een bedrijfsspecifiek beoordelingskader? Kopieer de prompt dan samen met het beoordelingskader in een AI en vraag het om de prompt aan te passen naar de specifieke situatie. De gestructureerde prompt zal aangepast worden zonder de opzet aan te passen.
    - Vergeet de nieuwe prompt niet te delen!
 
 

@@ -1,13 +1,13 @@
 📌 Overzicht
-- Deze prompt maakt een visuele project canvas aan de hand van notities of andere documenten. Geen documenten? Dan stelt de AI enkele vragen en stelt op basis daarvan een canvas op.  
+- Deze prompt maakt een visueel projectcanvas aan de hand van notities of andere documenten. Geen documenten? Dan stelt de AI enkele vragen en stelt vervolgens op basis daarvan een canvas op.  
 
 🚀 Hoe gebruik je het?
-- Kopieer de prompt naar ChatGPT, druk op enter en laat AI het werk doen. Heb je informatie die je om wil zetten naar een projectcanvas, upload dit.
-- De output is een visueel project canvas. ChatGPT genereert HTML-code in de canvas modus van ChatGPT. Druk na het genereren rechtsboven op voorbeeld en het canvas wordt weergegeven.
-- Deze prompt is gezien de vereiste canvas-functionaliteit alleen getest in ChatGPT.
+- Kopieer de prompt naar ChatGPT, druk op enter en laat AI het werk doen. Heb je informatie die je om wilt zetten naar een projectcanvas, upload dit.
+- De output is een visueel projectcanvas. ChatGPT genereert HTML-code in de canvasmodus van ChatGPT. Klik na het genereren rechtsboven op 'Voorbeeld' en het canvas wordt weergegeven.
+- Deze prompt is, gezien de vereiste canvas-functionaliteit, alleen getest in ChatGPT.
 
-🛠 Aanpassingen
-- Je kunt de prompt op maat maken door de HTML-code aan te passen om op die manier een andere canvas te laten genereren. 
+🛠️ Aanpassingen
+- Je kunt de prompt op maat maken door de HTML-code aan te passen om op die manier een ander canvas te laten genereren. 
 
 📖 Voorwaarden
 - De prompt is bedoeld als ondersteunend hulpmiddel en vervangt geen juridisch advies.
