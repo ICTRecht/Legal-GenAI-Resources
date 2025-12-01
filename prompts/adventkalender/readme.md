@@ -1,0 +1,2 @@
+## Prompt Adventkalendar
+In december 2025 lanceren wij een Prompt Adventkalendar, waarbij er tot de Kerst iedere werkdag een prompt wordt toegevoegd of verbeterd, en wordt gedeeld met onze volgers. Sommige prompts zijn wat ludieker en passen niet tussen de 'serieuze' prompt. Voor dergelijke prompts is deze map bestemd.
