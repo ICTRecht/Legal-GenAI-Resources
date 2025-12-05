@@ -1,5 +1,5 @@
 # System-Behavior Optimizer Prompt
-Dit document legt uit hoe je de **System-Behavior Optimizer XML-prompt** gebruikt om hallucinaties te beperken, feitelijke nauwkeurigheid af te dwingen en de betrouwbaarheid van ChatGPT of vergelijkbare LLM’s te verbeteren.  
+Dit document legt uit hoe je de **System-Behavior Optimizer prompt** gebruikt om hallucinaties te beperken, feitelijke nauwkeurigheid af te dwingen en de betrouwbaarheid van ChatGPT of vergelijkbare LLM’s te verbeteren.  
 De optimizer zet een “RAW_PROMPT” om in een **strikte, minimale en duurzame instructie** die het model aanstuurt tot hoog-nauwkeurig gedrag.
 
 ## 🎯 Doel
@@ -14,7 +14,7 @@ Deze prompt creëert een **gedragscontract** dat het model verplicht om:
 Het resultaat is aanzienlijk betrouwbaardere output, vooral in juridische, technische en compliance-contexten.
 
 ## 🧩 Hoe het werkt
-De XML-template fungeert als een *system-level instructie*.  
+De template fungeert als een *system-level instructie*.  
 Wanneer je een RAW_PROMPT aanlevert, doet het model het volgende:
 
 1. Leest de acceptatiecriteria  
@@ -26,8 +26,8 @@ Wanneer je een RAW_PROMPT aanlevert, doet het model het volgende:
 Deze regel fungeert als een herbruikbare veiligheidslaag rond elke instructieset die je wilt optimaliseren.
 
 ## 🚀 Gebruiksaanwijzing
-### 1. Lever de XML-prompt aan  
-Plak de volledige XML-structuur in het systeemveld of het eerste bericht van een nieuw gesprek.
+### 1. Lever de prompt aan  
+Plak de volledige structuur in het personaliseringveld onder de instellingen of het eerste bericht van een nieuw gesprek.
 
 ### 2. Voeg je RAW_PROMPT toe  
 Vervang de placeholder door de instructies die je wilt opschonen, verscherpen of stabiliseren.
