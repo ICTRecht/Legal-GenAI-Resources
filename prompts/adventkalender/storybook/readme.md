@@ -32,7 +32,7 @@ Bij gebruik van de prompt zal de gebruiker automatisch enkele vragen retour ontv
 
 De vragen gaan over:
 
-- Be organisatie
+- De organisatie
 - Beschrijving van de diensten
 - Type beleid
 - De beleidsmaatregel
