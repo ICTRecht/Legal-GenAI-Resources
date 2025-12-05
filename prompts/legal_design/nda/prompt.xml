@@ -1,0 +1,73 @@
+<LegalDesignNDA>
+  <Instructie>
+		Maak een volledige contractpagina in een visuele stijl. De inhoud is een non-disclosure agreement. Gebruik een strakke, professionele, minimalistische layout met een [StijlAchtergrond] canvas. Als er een logo is aangeleverd, gebruik dan de kleuren uit het logo en plaats het logo op een logische plek op de pagina. Als er geen logo is aangeleverd gebruik dan [StijlHoofdkleur] voor accenten en [StijlSteunkleur] voor vlakken. Gebruik ter ondersteuning en verduidelijking zoveel als mogelijk duidelijke iconen. Gebruik verder zo min mogelijk moeilijke woorden of juridische taal.
+	</Instructie>
+	<Doel>
+	</Doel>
+  <Output>
+    <Paginaformaat>A4</Paginaformaat>
+    <Bestandsformaat>PNG</Bestandsformaat> <!-- PNG / PDF / HTML -->
+    <InhoudelijkeStructuur>
+        <!<![CDATA[
+          Titel van de overeenkomst bovenaan: [VUL TITEL IN].
+          Korte inleiding van 4–6 regels.
+          Schematisch overzicht van de partijen.
+          Tabel-achtige of blokstructuur met 3–5 onderdelen.
+          Diagram (bijvoorbeeld: doel, flow, duur overeenkomst).
+          Onderste sectie met samenvatting of opsomming (bullets).
+          Veld voor ondertekening van de overeenkomst door beide partijen.
+          Footer met kleine icoontjes en één korte disclaimer.
+        ]]>
+    </InhoudelijkeStructuur>
+  </Output>
+
+	<Parameters>
+    <PartijA>
+      <Naam>[Naam partij A]</Naam>
+      <Adres>[Adres partij A]</Adres>
+      <KamerVanKoophandel>[KvK-nummer partij A]</KamerVanKoophandel>
+      <Rol>[Rol van partij A in de overeenkomst]</Rol>
+    </PartijA>
+    <PartijB>
+      <Naam>[Naam partij B]</Naam>
+      <Adres>[Adres partij B]</Adres>
+      <KamerVanKoophandel>[KvK-nummer partij B]</KamerVanKoophandel>
+      <Rol>[Rol van partij B in de overeenkomst]</Rol>
+    </PartijB>
+		<TaalVoorkeur>Nederlands</TaalVoorkeur>
+    <DoelVanNDA>Mogelijke overeenkomst</DoelVanNDA> <!-- Doel van het sluiten van de NDA -->
+    <Reciprociteit>Wederkerig</Reciprociteit> <!-- Wederkerig / Partij A ontvangt / Partij B ontvangt -->
+    <Vertrouwelijkheid>Gebalanceerd</Vertrouwelijkheid> <!-- Breed / Gebalanceerd / Strikt -->
+    <DuurGeheimhouding>3 jaar</DuurGeheimhouding>
+    <DuurOvereenkomst>1 jaar</DuurOvereenkomst>
+    <Boete>Ja</Boete> <!-- Ja / Nee -->
+    <HoogteBoete>EUR 500,- per overtreding met een maximum van EUR 5.000,-</HoogteBoete>
+    <ToepasselijkRecht>Nederlands recht</ToepasselijkRecht>
+	</Parameters>
+
+	<Stijlregels>
+    <Logo></Logo> <!-- Geef URL op of upload een logo -->
+    <Stijl>Illustratief</Stijl> <!-- Strak / Speels / Illustratief -->
+    <StijlHoofdkleur>blauw</StijlHoofdkleur>
+    <StijlSteunkleur>turqoise</StijlSteunkleur>
+    <StijlAchtergrond>wit</StijlAchtergrond>
+    <StijlTypografie>Raleway</StijlTypografie> <!-- TIP: gebruik Google Fonts -->
+	</Stijlregels>
+
+  <FocusOnderwerpen>
+    <Onderwerp>Partijen</Onderwerp>
+    <Onderwerp>Doel van NDA</Onderwerp>
+    <Onderwerp>Reciprociteit</Onderwerp>
+    <Onderwerp>Herkenbaarheid van vertrouwelijke informatie</Onderwerp>
+    <Onderwerp>Mondelinge informatie</Onderwerp>
+    <Onderwerp>Dekking naar werknemers of hulppersonen</Onderwerp>
+    <Onderwerp>Geen verdere commitments</Onderwerp>
+    <Onderwerp>Eigendom van informatie</Onderwerp>
+    <Onderwerp>Uitsluitingen van geheimhouding</Onderwerp>
+    <Onderwerp>Afgifte aan autoriteiten</Onderwerp>
+    <Onderwerp>Boete</Onderwerp>
+    <Onderwerp>Duur van geheimhouding</Onderwerp>
+    <Onderwerp>Duur van de overeenkomst</Onderwerp>
+    <Onderwerp>Toepasselijk recht</Onderwerp>
+  </FocusOnderwerpen>
+</LegalDesignNDA>
