@@ -1,6 +1,3 @@
-Hieronder een voorstel voor een volledige **README** voor jouw nieuwe *Legal Design NDA-prompt*. Ik sluit qua indeling en stijl aan op de structuur van de reeds bijgevoegde readme, maar afgestemd op het doel van deze prompt: het genereren van visueel ontworpen, juridisch vereenvoudigde NDA’s.
-
-
 # 📌 Overzicht
 
 De **Legal Design NDA-prompt** is ontwikkeld om snel en consistent een **visueel overzichtelijke, juridisch begrijpelijke geheimhoudingsovereenkomst (NDA)** te genereren. De prompt zet jouw parameters automatisch om in een **professioneel vormgegeven contractpagina** in PNG-, PDF- of HTML-formaat.
