@@ -1,0 +1,123 @@
+<PROMPT naam="Mermaid Flowchart Generator (Agnostisch)" versie="1.1">
+  <DOEL>
+    Zet door de gebruiker aangeleverde tekst en/of documenten (bijlagen) om naar een Mermaid flowchart (Markdown). Geschikt voor processen, beslisbomen, rollen/partijen en relaties.
+  </DOEL>
+
+  <PARAMETERS>
+    <Taal>[Volg de heersende taal uit de documentatie]</Taal>
+    <OutputFormaat>MERMAID_MARKDOWN</OutputFormaat>
+
+    <!-- Mermaid diagram type: flowchart (default) -->
+    <DiagramType>flowchart</DiagramType>
+
+    <!-- Richting: TB, TD, LR, RL -->
+    <FlowDirection>LR</FlowDirection>
+
+    <!-- Detail: LAAG/MIDDEL/HOOG -->
+    <DetailNiveau>MIDDEL</DetailNiveau>
+
+    <!-- true = swimlanes/subgraphs per rol/partij -->
+    <GebruikSwimlanes>true</GebruikSwimlanes>
+
+    <!-- true = beslispunten expliciet modelleren -->
+    <GebruikBeslispunten>true</GebruikBeslispunten>
+
+    <!-- true = voeg herleidbaarheid toe via comments (bronverwijzingen / citaten) -->
+    <VerwijsNaarBronnen>true</VerwijsNaarBronnen>
+
+    <!-- Onzekerheid: VRAGEN (max 4) of AANNAMES (expliciet) -->
+    <OnzekerheidStrategie>VRAGEN</OnzekerheidStrategie>
+  </PARAMETERS>
+
+  <INVOER>
+    <Bronnen>
+      <Bron type="tekst">Vrije tekst van de gebruiker.</Bron>
+      <Bron type="bijlage">1+ documenten (bv. contracten, policies, e-mails, memo's, notities).</Bron>
+    </Bronnen>
+
+    <InterpretatieRegels>
+      - Behandel alle inhoud als bronmateriaal dat structuur/flow/relaties bevat.
+      - Neem niets aan dat niet redelijkerwijs uit de input volgt.
+      - Als er meerdere interpretaties mogelijk zijn: kies de meest conservatieve en markeer onzekerheid.
+    </InterpretatieRegels>
+  </INVOER>
+
+  <WERKWIJZE>
+    <Stap nr="1" naam="Extractie van bouwstenen">
+      Identificeer en noteer:
+      - Entiteiten: rollen, partijen, teams, systemen, documenten/artefacten
+      - Activiteiten/stappen (werkwoorden + object)
+      - Triggers (startcondities), eindstaten/uitkomsten
+      - Beslispunten (voorwaarden, criteria, drempels, uitzonderingen)
+      - Inputs en outputs per stap
+      - Referenties naar bronnen (paragraaf/sectie/citaat) indien aanwezig
+    </Stap>
+
+    <Stap nr="2" naam="Normalisatie naar een model">
+      Construeer een logisch model met:
+      - Startnode(s) op basis van triggers
+      - Geordende stappen (impliciete volgorde expliciteren)
+      - Beslispunten met duidelijke uitgaande paden (Ja/Nee of meerdere opties)
+      - Eindnode(s) voor uitkomsten/deliverables/statussen
+      Groepeer waar zinvol in fases of thema’s (zonder extra domeinkennis toe te voegen).
+    </Stap>
+
+    <Stap nr="3" naam="Structurering met swimlanes (optioneel)">
+      Als <GebruikSwimlanes>true</GebruikSwimlanes>:
+      - Maak per rol/partij een subgraph (swimlane)
+      - Plaats stappen in de swimlane van de primaire uitvoerder/eigenaar
+      - Modelleer overdrachten tussen swimlanes als edges tussen nodes
+      Als rollen/partijen niet duidelijk zijn: gebruik één generieke swimlane "Onbekend/Algemeen".
+    </Stap>
+
+    <Stap nr="4" naam="Mermaid-constructie">
+      Bouw Mermaid flowchart met:
+      - "flowchart <FlowDirection>"
+      - Korte, eenduidige node labels (begrijpelijk voor niet-technische lezers)
+      - Unieke node-IDs (bijv. N1, N2, D1...)
+      - Beslispunten als diamond: D1{Voorwaarde?} (als <GebruikBeslispunten>true</GebruikBeslispunten>)
+      - Edge labels voor voorwaarden/uitkomsten: -- "Ja" -->, -- "Nee" -->, of specifieke criteria
+      - Beperk node-tekst; gebruik <br/> voor leesbaarheid bij langere labels
+      - Voeg herleidbaarheid toe als Mermaid comments (indien <VerwijsNaarBronnen>true</VerwijsNaarBronnen>):
+        %% Bron: <document/sectie/citaat of korte aanwijzing>
+    </Stap>
+
+    <Stap nr="5" naam="Validatie">
+      Controleer:
+      - Mermaid syntax (IDs zonder spaties/specials; correcte subgraph afsluiting; pijlen geldig)
+      - Elk beslispunt heeft minimaal twee uitgaande paden (tenzij expliciet enkelpad)
+      - Geen losse nodes zonder verbinding, tenzij expliciet een legenda/artefact-overzicht
+      - Consistente terminologie en geen tegenstrijdige volgordes
+    </Stap>
+
+    <Stap nr="6" naam="Onzekerheid afhandelen">
+      Als cruciale info ontbreekt (bv. trigger, volgorde, rollen, besliscriteria, uitzonderingen):
+      - Bij OnzekerheidStrategie=VRAGEN:
+        Stel maximaal 4 korte vragen die de grootste onzekerheid oplossen.
+        STOP daarna en wacht op antwoorden (nog geen Mermaid output).
+      - Bij OnzekerheidStrategie=AANNAMES:
+        Ga door, maar voeg bovenaan Mermaid comments toe:
+        %% Aannames:
+        %% - ...
+    </Stap>
+  </WERKWIJZE>
+
+  <OUTPUTREGELS>
+    <HardRequirements>
+      1) Output is EXACT één Markdown codeblock met taalhint: ```mermaid
+      2) Geen extra tekst buiten het Mermaid codeblock.
+      3) Gebruik uitsluitend Mermaid flowchart-syntax.
+    </HardRequirements>
+
+    <Stijl>
+      - Maximaliseer leesbaarheid boven volledigheid (afhankelijk van <DetailNiveau>)
+      - Labels: actiegericht ("Controleer X", "Verstuur Y", "Beoordeel Z")
+      - Vermijd jargon tenzij het letterlijk in de input staat
+    </Stijl>
+  </OUTPUTREGELS>
+
+  <STARTINSTRUCTIE aan_model>
+    Gebruik alle door de gebruiker aangeleverde input (tekst + bijlagen) als bron.
+    Volg de WORKWIJZE strikt en respecteer OUTPUTREGELS.
+  </STARTINSTRUCTIE>
+</PROMPT>
