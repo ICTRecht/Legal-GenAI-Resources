@@ -1,0 +1,133 @@
+<LegalDesignDPA>
+  <Instructie>
+		Maak een volledige contractpagina in een visuele stijl. De inhoud is een verwerkersovereenkomst die voldoet aan de eisen van de AVG. De eerste pagina bevat de inhoud van het contract en de tweede pagina geeft een overzicht van de details (verwerkingen, betrokkenen, categorieën persoonsgegevens, subverwerkers). Doe dit vanuit het perspectief van de [Perspectief]. Gebruik een strakke, professionele, minimalistische layout met een [StijlAchtergrond] canvas. Als er een logo is aangeleverd, gebruik dan de kleuren uit het logo en plaats het logo op een logische plek op de pagina. Als er geen logo is aangeleverd gebruik dan [StijlHoofdkleur] voor accenten en [StijlSteunkleur] voor vlakken. Gebruik ter ondersteuning en verduidelijking zoveel als mogelijk duidelijke iconen. Gebruik verder zo min mogelijk moeilijke woorden of juridische taal. Gebruik zoveel als mogelijk de termen 'Verwerkingsverantwoordelijke' en 'Verwerker' als het gaat om de partijaanduiding.
+	</Instructie>
+  <Output>
+    <Paginaformaat>A4</Paginaformaat>
+    <Bestandsformaat>PNG</Bestandsformaat> <!-- PNG / PDF / HTML -->
+    <InhoudelijkeStructuur>
+        <!<![CDATA[
+          -- Eerste pagina --
+          Titel van de overeenkomst bovenaan: [VUL TITEL IN].
+          Korte inleiding van 4–6 regels.
+
+          Sectie 1
+          Schematisch overzicht van de partijen.
+
+          Sectie 2
+          Tabel-achtige of blokstructuur met 3–5 onderdelen.
+
+          Sectie 3
+          Diagram (bijvoorbeeld: doel, flow, duur overeenkomst).
+
+          Sectie 4
+          Samenvatting of opsomming (bullets) met betrekking tot de [FocusOnderwerpen].
+
+          Sectie 5
+          Veld voor ondertekening van de overeenkomst door beide partijen.
+          Footer met kleine icoontjes en één korte disclaimer.
+
+          -- Tweede pagina --
+          Een overzicht van de verwerkingen in de onderstaande tabelvorm
+          | Verwerking | Betrokkenen | Soort persoonsgegevens | Grondslag van verwerking | Doorgifte buiten de EER |
+          |-----------|--------------------------|----------------------------|----------------------------|--------------|
+          | [Verwerking 1] | [Betrokkenen] | [Soort persoonsgegevens] | [Grondslag van verwerking] | [Ja/Nee] |
+
+          Een overzicht van de subverwerkers in de onderstaande tabelvorm
+          | Subverwerker | Beschrijving van de activiteiten | Verwerking buiten de EER | Verwerkersovereenkomst |
+          |-----------|--------------------------|----------------------------|----------------------------|--------------|
+          | [Subverwerker 1] | [Beschrijving] | [Ja/Nee] | [Ja/Nee] |
+        ]]>
+    </InhoudelijkeStructuur>
+  </Output>
+
+	<Parameters>
+    <PartijA>
+      <Naam>Contoso B.V.</Naam>
+      <Adres>Straat 123, 1234AB Amsterdam</Adres>
+      <KamerVanKoophandel>12345678</KamerVanKoophandel>
+      <Rol>Verwerkingsverantwoordelijke</Rol> <!-- Verwerkingsverantwoordelijke / Verwerker -->
+    </PartijA>
+    <PartijB>
+      <Naam>HR Software B.V.</Naam>
+      <Adres>Softwarelaan 987, 9876ZY Rotterdam</Adres>
+      <KamerVanKoophandel>87654321</KamerVanKoophandel>
+      <Rol>Verwerker</Rol> <!-- Verwerkingsverantwoordelijke / Verwerker -->
+    </PartijB>
+    <Perspectief>Verwerkingsverantwoordelijke</Perspectief> <!-- Verwerkingsverantwoordelijke / Verwerker -->
+		<TaalVoorkeur>Nederlands</TaalVoorkeur>
+    <DoelVanVerwerking>Leveren van HR software</DoelVanVerwerking> <!-- Doel van de verwerkering -->
+    <Meldtermijn>24 uur</Meldtermijn><!-- [24] uur / zonder onredelijke vertraging / inspanning binnen 24 uur, verplichting uiterlijk binnen 48 uur -->
+    <MeldtermijnVerzoekenBetrokkenen>inspanning binnen 48 uur, verplichting uiterlijk binnen 72 uur</MeldtermijnVerzoekenBetrokkenen><!-- [72] uur / zonder onredelijke vertraging / inspanning binnen 48 uur, verplichting uiterlijk binnen 72 uur -->
+    <InschakelingSubverwerkers>Voorafgaande toestemming Verwerkingsverantwoordelijke</InschakelingSubverwerkers> <!-- Voorafgaande toestemming / Algemene toestemming, met bezwaar / Algemene toestemming -->
+    <DoorgiftePersoonsgegevens>Binnen EER</DoorgiftePersoonsgegevens> <!-- Binnen EER / Buiten EER met toestemming / Buiten EER met passend bescherminsniveau -->
+    <Audit>
+      <AuditRecht>Initiatief van verwerkingsverantwoordelijke</AuditRecht><!-- Initiatief verwerkingsverantwoordelijke / Enkel bij ernstig vermoeden / Nee -->
+      <AuditFrequentie>1 keer per jaar</AuditRecht> <!-- Onbeperkt / [1] keer per jaar -->
+      <AuditKosten>Voor Verwerkingsverantwoordelijke, tenzij substantiële tekortkoming verwerker</AuditKosten> <!-- Voor Verwerkingsverantwoordelijke, tenzij substantiële tekortkoming verwerker / Voor Verwerkingsverantwoordelijke / In gelijke delen verdeeld -->
+    </Audit>
+    <DuurOvereenkomst>Duur hoofdovereenkomst</DuurOvereenkomst>
+    <ToepasselijkRecht>Nederlands recht</ToepasselijkRecht>
+	</Parameters>
+
+	<Stijlregels>
+    <Logo></Logo> <!-- Geef URL op of upload een logo -->
+    <Stijl>Illustratief</Stijl> <!-- Strak / Speels / Illustratief -->
+    <StijlHoofdkleur>blauw</StijlHoofdkleur>
+    <StijlSteunkleur>turqoise</StijlSteunkleur>
+    <StijlAchtergrond>wit</StijlAchtergrond>
+    <StijlTypografie>Raleway</StijlTypografie> <!-- TIP: gebruik Google Fonts -->
+	</Stijlregels>
+
+  <FocusOnderwerpen>
+    <Onderwerp>Partijen</Onderwerp>
+    <Onderwerp>Persoonsgegevens en doeleinden</Onderwerp>
+    <Onderwerp>Doorgifte van persoonsgegevens</Onderwerp>
+    <Onderwerp>Beveiliging van persoonsgegevens</Onderwerp>
+    <Onderwerp>Monitoring, informatie- en meldplichten en incidentenmanagement</Onderwerp>
+    <Onderwerp>Inschakeling subverwerkers</Onderwerp>
+    <Onderwerp>Audits</Onderwerp>
+    <Onderwerp>Verzoeken van betrokkenen</Onderwerp>
+    <Onderwerp>Bewaartermijnen en verwijdering of vernietiging van de persoonsgegevens</Onderwerp>
+    <Onderwerp>Duur van de verwerkersovereenkomst</Onderwerp>
+    <Onderwerp>Toepasselijk recht</Onderwerp>
+  </FocusOnderwerpen>
+
+  <Verwerkingen>
+    <Verwerking>
+        <NaamVerwerking>HR Administratie</NaamVerwerking>
+        <Betrokkenen>Medewerkers</Betrokkenen>
+        <SoortPersoonsgegevens>NAW, BSN, salaris, functie</SoortPersoonsgegevens>
+        <Grondslag>Uitvoering overeenkomst</Grondslag>
+        <Doorgifte>Nee</Doorgifte>
+    </Verwerking>
+    <Verwerking>
+        <NaamVerwerking>Verzuimregistratie</NaamVerwerking>
+        <Betrokkenen>Medewerkers</Betrokkenen>
+        <SoortPersoonsgegevens>NAW, Gezondheidsgegevens (beperkt)</SoortPersoonsgegevens>
+        <Grondslag>Wettelijke verplichting</Grondslag>
+        <Doorgifte>Nee</Doorgifte>
+    </Verwerking>
+  </Verwerkingen>
+
+  <Subverwerkers>
+    <Subverwerker>
+      <NaamSubverwerker>Hostingprovider X</NaamSubverwerker>
+      <Activiteiten>Opslag van data in datacenter</Activiteiten>
+      <Doorgifte>Nee</Doorgifte>
+      <Verwerkersovereenkomst>Ja</Verwerkersovereenkomst>
+    </Subverwerker>
+    <Subverwerker>
+      <NaamSubverwerker>Support partner Y</NaamSubverwerker>
+      <Activiteiten>Technische ondersteuning op afstand</Activiteiten>
+      <Doorgifte>Nee</Doorgifte>
+      <Verwerkersovereenkomst>Ja</Verwerkersovereenkomst>
+    </Subverwerker>
+    <Subverwerker>
+      <NaamSubverwerker>E-mailprovider Z</NaamSubverwerker>
+      <Activiteiten>Verwerking van inkomende meldingen</Activiteiten>
+      <Doorgifte>Nee</Doorgifte>
+      <Verwerkersovereenkomst>Ja</Verwerkersovereenkomst>
+    </Subverwerker>
+  </Subverwerkers>
+</LegalDesignDPA>
