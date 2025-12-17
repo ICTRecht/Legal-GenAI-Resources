@@ -1,0 +1,55 @@
+<LegalDesignDPA>
+  <Instructie>
+		Maak een volledige contractpagina in een visuele stijl. De inhoud is een verwerkersovereenkomst die voldoet aan de eisen van de AVG. Doe dit vanuit het perspectief van de [Perspectief]. Gebruik een strakke, professionele, minimalistische layout met een [StijlAchtergrond] canvas. Gebruik voor de inhoud van de verwerkersovereenkomst de bijgevoegde verwerkersovereenkomst. Haal daar alle relevante informatie ten aanzien van de [FocusOnderwerpen] en partijen uit. Gebruik [StijlHoofdkleur] voor accenten en [StijlSteunkleur] voor vlakken. Gebruik ter ondersteuning en verduidelijking zoveel als mogelijk duidelijke iconen. Gebruik verder zo min mogelijk moeilijke woorden of juridische taal. Gebruik zoveel als mogelijk de termen 'Verwerkingsverantwoordelijke' en 'Verwerker' als het gaat om de partijaanduiding.
+	</Instructie>
+  <Output>
+    <Paginaformaat>A4</Paginaformaat>
+    <Bestandsformaat>PNG</Bestandsformaat> <!-- PNG / PDF / HTML -->
+    <InhoudelijkeStructuur>
+        <!<![CDATA[
+          -- Eerste pagina --
+          Titel van de overeenkomst bovenaan: [VUL TITEL IN].
+          Korte inleiding van 4–6 regels.
+
+          Sectie 1
+          Schematisch overzicht van de partijen.
+
+          Sectie 2
+          Tabel-achtige of blokstructuur met 3–5 onderdelen.
+
+          Sectie 3
+          Diagram (bijvoorbeeld: doel, flow, duur overeenkomst).
+
+          Sectie 4
+          Samenvatting of opsomming (bullets) met betrekking tot de [FocusOnderwerpen].
+
+          Sectie 5
+          Veld voor ondertekening van de overeenkomst door beide partijen.
+          Footer met kleine icoontjes en één korte disclaimer.
+        ]]>
+    </InhoudelijkeStructuur>
+  </Output>
+
+	<Stijlregels>
+    <Logo></Logo> <!-- Geef URL op of upload een logo -->
+    <Stijl>Illustratief</Stijl> <!-- Strak / Speels / Illustratief -->
+    <StijlHoofdkleur>blauw</StijlHoofdkleur>
+    <StijlSteunkleur>turqoise</StijlSteunkleur>
+    <StijlAchtergrond>wit</StijlAchtergrond>
+    <StijlTypografie>Raleway</StijlTypografie> <!-- TIP: gebruik Google Fonts -->
+	</Stijlregels>
+
+  <FocusOnderwerpen>
+    <Onderwerp>Partijen</Onderwerp>
+    <Onderwerp>Persoonsgegevens en doeleinden</Onderwerp>
+    <Onderwerp>Doorgifte van persoonsgegevens</Onderwerp>
+    <Onderwerp>Beveiliging van persoonsgegevens</Onderwerp>
+    <Onderwerp>Monitoring, informatie- en meldplichten en incidentenmanagement</Onderwerp>
+    <Onderwerp>Inschakeling subverwerkers</Onderwerp>
+    <Onderwerp>Audits</Onderwerp>
+    <Onderwerp>Verzoeken van betrokkenen</Onderwerp>
+    <Onderwerp>Bewaartermijnen en verwijdering of vernietiging van de persoonsgegevens</Onderwerp>
+    <Onderwerp>Duur van de verwerkersovereenkomst</Onderwerp>
+    <Onderwerp>Toepasselijk recht</Onderwerp>
+  </FocusOnderwerpen>
+</LegalDesignDPA>
