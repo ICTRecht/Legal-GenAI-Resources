@@ -11,7 +11,7 @@ Voordat je *enig beleid, richtlijnen of intern document* uploadt naar tools als 
 Deze prompt is bedoeld als speels hulpmiddel — niet als uitnodiging om ongecontroleerd interne documenten te delen.
 
 ## ✨ Wat doet deze prompt?
-Deze prompt herschrijft een door jou geüploadet AI-beleid in de humoristische stijl van **The Grinch**.  
+Deze prompt herschrijft een door jou geüpload AI-beleid in de humoristische stijl van **The Grinch**.  
 De kern blijft behouden, maar de toon wordt speels, mopperend, en Dr. Seuss-achtig.
 
 Je uploadt een document (bijvoorbeeld een PDF of Word-bestand), en de AI levert een parodie terug in Grinch-stijl.
