@@ -1,0 +1,56 @@
+<VisualCoverpage>
+  <Instructie>
+		Maak op basis van de bijgevoegde overeenkomst een samenvattend document in visuele stijl. Doe dit vanuit het perspectief van de [Perspectief]. Gebruik een strakke, professionele, minimalistische layout met een [StijlAchtergrond] canvas. Haal alle relevante informatie uit de bijgevoegde overeenkomst ten aanzien van de [FocusOnderwerpen] en partijen. Gebruik [StijlHoofdkleur] voor accenten en [StijlSteunkleur] voor vlakken. Gebruik ter ondersteuning en verduidelijking zoveel als mogelijk duidelijke iconen. Gebruik verder zo min mogelijk moeilijke woorden of juridische taal.
+	</Instructie>
+  <Output>
+    <Paginaformaat>A4</Paginaformaat>
+    <Bestandsformaat>PNG</Bestandsformaat> <!-- PNG / PDF / HTML / MD -->
+    <InhoudelijkeStructuur>
+        <!<![CDATA[
+          Titel van de overeenkomst bovenaan: [VUL TITEL IN].
+          Korte samenvatting van de overeenkomst van 4–6 regels.
+
+          Sectie 1
+          Schematisch overzicht van de partijen.
+
+          Sectie 2
+          Diagram met startdatum, duur van de overeenkomst, einddatum en opzegtermijn.
+
+          Sectie 3
+          Tabel-achtige structuur waarin alle [FocusOnderwerpen] zijn opgesomd (voor zover deze ook zijn benoemd in de overeenkomst), kort wordt weergeven wat er over het onderwerp in de overeenkomst is genoemd en wordt verwezen naar het artikel waarin het onderwerp in de overeenkomst wordt besproken. Per onderwerp wordt middels het stoplichtmodel aangegeven in welke mate het onderwerp positief of negatief is voor de partij vanuit het perspectief van [Perspectief].
+
+          Sectie 4
+          Footer met kleine icoontjes en één korte disclaimer.
+        ]]>
+    </InhoudelijkeStructuur>
+  </Output>
+
+  <Parameters>
+    <Perspectief>Opdrachtgever</Perspectief>
+  </Parameters>
+
+	<Stijlregels>
+    <Logo></Logo> <!-- Geef URL op of upload een logo -->
+    <Stijl>Illustratief</Stijl> <!-- Strak / Speels / Illustratief -->
+    <StijlHoofdkleur>blauw</StijlHoofdkleur>
+    <StijlSteunkleur>turqoise</StijlSteunkleur>
+    <StijlAchtergrond>wit</StijlAchtergrond>
+    <StijlTypografie>Raleway</StijlTypografie> <!-- TIP: gebruik Google Fonts -->
+	</Stijlregels>
+
+  <FocusOnderwerpen>
+    <Onderwerp>Type overeenkomst</Onderwerp>
+    <Onderwerp>Voorwerp van overeenkomst</Onderwerp>
+    <Onderwerp>Startdatum van overeenkomst</Onderwerp>
+    <Onderwerp>Einddatum van overeenkomst</Onderwerp>
+    <Onderwerp>Duur van overeenkomst</Onderwerp>
+    <Onderwerp>Opzegtermijn</Onderwerp>
+    <Onderwerp>Intellectueel eigendom</Onderwerp>
+    <Onderwerp>Geheimhouding</Onderwerp>
+    <Onderwerp>Vergoedingen</Onderwerp>
+    <Onderwerp>Aansprakelijkheid</Onderwerp>
+    <Onderwerp>Boetes</Onderwerp>
+    <Onderwerp>Verwerking van persoonsgegevens</Onderwerp>
+    <Onderwerp>Toepasselijk recht</Onderwerp>
+  </FocusOnderwerpen>
+</VisualCoverpage>
