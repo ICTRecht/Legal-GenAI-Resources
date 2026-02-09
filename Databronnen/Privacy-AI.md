@@ -1,6 +1,6 @@
 ## Privacy- en AI-gerelateerde RAG
 
-Hieronder staat verwijzingen naar openbare documenten die je kunt gebruiken bij het maken en testen van een Privacy-chatbot
+Hieronder staat verwijzingen naar openbare documenten die je kunt gebruiken bij het maken en testen van een Privacy en AI-chatbot
 
 ## Links
 
