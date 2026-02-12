@@ -91,6 +91,8 @@ Activeer de plugin via de toggle.
 
 # Structuur
 
+```
+/
 plugins/ictrecht/
 ├── .claude-plugin/
 │ └── plugin.json
@@ -100,6 +102,7 @@ plugins/ictrecht/
 ├── skills/
 └── commands/
 
+```
 
 ---
 
