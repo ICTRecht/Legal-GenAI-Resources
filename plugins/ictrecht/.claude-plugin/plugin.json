@@ -1,0 +1,8 @@
+{
+  "name": "ictrecht",
+  "version": "1.0.0",
+  "description": "ICTRecht legal plugin for Claude Cowork to streamline legal work",
+  "author": {
+    "name": "ICTRecht"
+  }
+}
