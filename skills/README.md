@@ -11,6 +11,21 @@ Claude Skills are reusable instruction sets that configure Claude as a legal spe
 
 ## Available Skills
 
+| Skill | Description | Regulation | Status |
+|---|---|---|---|
+| [Legal Contract Reviewer](./contract-reviewer/) | Reviews contracts clause by clause, flags red flags and missing standard clauses | Dutch contract law, GDPR | ICTRecht Verified |
+| [GDPR Compliance Analyst](./gdpr-analyst/) | Gap analysis of processing activities, documents, and systems against GDPR/UAVG | GDPR, UAVG | ICTRecht Verified |
+| [EU AI Act Navigator](./eu-ai-act-navigator/) | Classifies AI systems under the EU AI Act and maps applicable obligations | EU AI Act (2024/1689) | ICTRecht Verified |
+
+## Coming soon
+
+- NIS2 Checklist Assistant
+- Legal Memo Writer
+- Regulation Summariser
+
+## Skill format
+
+Every Skill follows this structure — see [SKILL_TEMPLATE.md](./SKILL_TEMPLATE.md) for the full template:
 | Skill | Description | Status |
 |---|---|---|
 | *Coming soon* | | |
