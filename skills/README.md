@@ -6,7 +6,7 @@ Claude Skills are reusable instruction sets that configure Claude as a legal spe
 
 1. Open the Skill folder and read the `README.md` for context, model compatibility, and limitations.
 2. Copy the contents of `skill.md`.
-3. Paste it as a system prompt in Claude (Project Instructions in Claude.ai, or the `system` parameter in the API).
+3. Paste it as a system prompt in Claude (Project Instructions, or the system prompt field in the API).
 4. Start your session — Claude now behaves as the configured specialist.
 
 ## Available Skills
@@ -26,6 +26,13 @@ Claude Skills are reusable instruction sets that configure Claude as a legal spe
 ## Skill format
 
 Every Skill follows this structure — see [SKILL_TEMPLATE.md](./SKILL_TEMPLATE.md) for the full template:
+| Skill | Description | Status |
+|---|---|---|
+| *Coming soon* | | |
+
+## Skill format
+
+Every Skill follows this structure:
 
 ```
 skills/{skill-name}/
@@ -37,4 +44,4 @@ skills/{skill-name}/
 
 ## Contributing a Skill
 
-See [CONTRIBUTING.md](../CONTRIBUTING.md) for format requirements and submission process.
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for the full format requirements and submission process.
