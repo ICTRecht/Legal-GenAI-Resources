@@ -3,6 +3,15 @@
 Curated references to external sources, datasets, APIs, research, and tooling relevant to Legal AI — with a focus on Dutch and European law.
 
 ## Regulation texts & official sources
+## Categories
+
+| File | Coverage |
+|---|---|
+| [`privacy.md`](./privacy.md) | GDPR / AVG — EDPB guidelines, data protection documents |
+| [`ai-law.md`](./ai-law.md) | AI & privacy — AP position papers, EDPB AI opinions, LLM guidance |
+| [`open-data.md`](./open-data.md) | Woo (Open Government Act) — public procurement and open data sources |
+
+## Official legal databases
 
 | Source | Description | URL |
 |---|---|---|
@@ -24,6 +33,9 @@ See [`ai-law.md`](./ai-law.md) for curated AI regulation resources.
 
 See [`open-data.md`](./open-data.md) for Woo (Open Government Act) and public procurement resources.
 
+| EDPB | European Data Protection Board guidelines and opinions | [edpb.europa.eu](https://edpb.europa.eu) |
+| AI Act Observatory | EU AI Act tracker and implementation resources | [artificialintelligenceact.eu](https://artificialintelligenceact.eu) |
+
 ## ICTRecht publications
 
 | Publication | Description |
@@ -34,3 +46,13 @@ See [`open-data.md`](./open-data.md) for Woo (Open Government Act) and public pr
 | [Richtlijnen gebruik LLMs](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Richtlijnen/ICTRECHT%20ChatGPT%20Richtlijnen.pdf) | ICTRecht guidelines for LLM use |
 | [Hoe wij ChatGPT gebruiken](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Hoe%20wij%20ChatGPT%20gebruiken.pdf) | How ICTRecht uses ChatGPT internally |
 | [Factsheet: Custom GPTs](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Factsheets/Factsheet%20-%20Custom%20GPTs.pdf) | Guide to building Custom GPTs for legal work |
+| [De kunst van het prompten](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/Factsheet%20prompttrucs%20voor%20juristen.pdf) | Prompting techniques for lawyers |
+| [Kun je AI vertrouwen voor juridisch werk?](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/AI-onderzoek%202025.pdf) | ICTRecht AI reliability research 2025 |
+| [AI tooling voor de juridische professional](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Onderzoek/AI-tooling%20voor%20de%20legal%20professionals/Onderzoek%20AI-tooling%20voor%20de%20legal%20professionals.pdf) | Overview of AI tools for legal professionals |
+| [Richtlijnen gebruik LLMs](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Richtlijnen/ICTRECHT%20ChatGPT%20Richtlijnen.pdf) | ICTRecht guidelines for LLM use |
+| [Hoe wij ChatGPT gebruiken](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Hoe%20wij%20ChatGPT%20gebruiken.pdf) | How ICTRecht uses AI internally |
+| [Custom GPTs](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Factsheets/Factsheet%20-%20Custom%20GPTs.pdf) | Guide to building Custom GPTs for legal work |
+
+---
+
+*This folder replaces the former `Databronnen/` folder. All content has been migrated here.*
