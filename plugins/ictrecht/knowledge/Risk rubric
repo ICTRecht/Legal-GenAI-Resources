@@ -1,0 +1,351 @@
+{
+  "meta": {
+    "id": "ictrecht-risk-rubric-v1",
+    "name": "ICTRecht Risk Rubric",
+    "version": "1.0.0",
+    "language": "nl-NL",
+    "jurisdiction": ["NL", "EU"],
+    "last_updated": "2026-02-12",
+    "intended_use": [
+      "contract_review",
+      "saas_msa_review",
+      "dpa_review",
+      "security_addendum_review",
+      "negotiation_support"
+    ]
+  },
+  "scale": {
+    "type": "ordinal",
+    "levels": [
+      {
+        "id": "low",
+        "label": "Laag",
+        "definition": "Afwijking van preferred position, maar commercieel acceptabel."
+      },
+      {
+        "id": "medium",
+        "label": "Middel",
+        "definition": "Reëel juridisch of financieel risico; onderhandelbaar."
+      },
+      {
+        "id": "high",
+        "label": "Hoog",
+        "definition": "Substantieel risico; aanpassing vereist tenzij gemotiveerd."
+      },
+      {
+        "id": "critical",
+        "label": "Kritiek",
+        "definition": "Onacceptabel risico; escalatie verplicht."
+      }
+    ]
+  },
+  "dimensions": [
+    {
+      "id": "liability",
+      "label": "Aansprakelijkheid",
+      "description": "Contractuele aansprakelijkheidsregelingen, caps, carve-outs, (in)directe schade, vrijwaringen."
+    },
+    {
+      "id": "privacy",
+      "label": "Privacy & Gegevensbescherming",
+      "description": "AVG/DPA, verwerker/verwerkingsverantwoordelijke rollen, (sub)verwerkers, doorgifte, rechten betrokkenen."
+    },
+    {
+      "id": "security",
+      "label": "Informatiebeveiliging",
+      "description": "TOMs, beveiligingsstandaarden, incident response, audit/assurance, logging, encryptie."
+    },
+    {
+      "id": "ip",
+      "label": "IE & Eigendom",
+      "description": "IP-licenties, overdracht, vrijwaring IE-inbreuk, open source, verbeteringen/derivatives."
+    },
+    {
+      "id": "commercial",
+      "label": "Commercieel",
+      "description": "Prijsmechanismen, indexatie, betalingen, SLA/credits, beëindiging, exit fees."
+    },
+    {
+      "id": "compliance",
+      "label": "Compliance & Regulering",
+      "description": "Sectorale regels, export control/sancties, AI/compliance, auditability, toezichthoudervereisten."
+    },
+    {
+      "id": "operational",
+      "label": "Operationeel / Continuïteit",
+      "description": "Continuïteit, exit, dataportabiliteit, back-ups, escrow, disaster recovery."
+    }
+  ],
+  "preferred_positions": {
+    "liability": {
+      "liability_cap": {
+        "preferred": "12 maanden fees",
+        "minimum": "6 maanden fees",
+        "notes": "Cap bij voorkeur gebaseerd op vergoedingen betaald/verschuldigd in de voorafgaande 12 maanden; minimum 6 maanden als absolute ondergrens afhankelijk van context."
+      },
+      "indirect_damages": {
+        "preferred": "Indirecte schade uitgesloten",
+        "minimum": "Indirecte schade zoveel mogelijk uitgesloten",
+        "notes": "Uitsluiten van gevolgschade, gederfde winst, gemiste besparingen, verlies van data (tenzij carve-out gewenst)."
+      },
+      "carveouts": {
+        "preferred": ["opzet", "grove schuld", "privacyboetes (contextafhankelijk)"],
+        "minimum": ["opzet", "grove schuld"],
+        "notes": "Carve-outs beperken en expliciteren; let op boetes, IE-inbreuk en vertrouwelijkheid afhankelijk van onderhandelingspositie."
+      }
+    },
+    "privacy": {
+      "incident_notification": {
+        "preferred": "Binnen 48 uur na ontdekking",
+        "minimum": "Binnen 72 uur na ontdekking",
+        "notes": "Afstemmen op contractuele verplichtingen en AVG-termijnen; definieer 'discovery' en inhoud melding."
+      },
+      "subprocessors": {
+        "preferred": "Voorafgaande kennisgeving + bezwaarrecht",
+        "minimum": "Kennisgeving + redelijke mogelijkheid tot bezwaar",
+        "notes": "Include lijst subverwerkers/URL, notice period, en consequenties bij gegrond bezwaar."
+      },
+      "international_transfers": {
+        "preferred": "Alleen met passende waarborgen (SCC/UK IDTA waar van toepassing) + aanvullende maatregelen indien vereist",
+        "minimum": "Alleen met passende waarborgen",
+        "notes": "Neem transfer impact assessment-ondersteuning en transparantieverplichtingen op waar passend."
+      },
+      "audit_rights": {
+        "preferred": "Redelijk, proportioneel, beperkte frequentie, met confidentiality en security safeguards",
+        "minimum": "Proportioneel auditrecht",
+        "notes": "Bij voorkeur third-party rapporten (SOC2/ISO) als alternatief voor on-site audits."
+      }
+    },
+    "security": {
+      "security_standard": {
+        "preferred": "ISO 27001 of gelijkwaardig",
+        "minimum": "Gedocumenteerde TOMs + assurance",
+        "notes": "Alternatieven: SOC 2 Type II, NEN 7510 (zorg), of vergelijkbaar."
+      },
+      "encryption": {
+        "preferred": "Encryptie in transit en at rest",
+        "minimum": "Encryptie in transit; at rest waar passend",
+        "notes": "Specificeer sleutelmangement en scope (backups, databases)."
+      },
+      "incident_response": {
+        "preferred": "Formele incident response procedure + contactpunten + post-incident report",
+        "minimum": "Incident response procedure",
+        "notes": "Leg ook forensics, containment en communicatieprotocollen vast."
+      },
+      "pentest": {
+        "preferred": "Periodieke pentest; high-level resultaten op verzoek",
+        "minimum": "Beveiligingstesten; redelijke inzage",
+        "notes": "Let op beperking disclosure en remediation timelines."
+      }
+    },
+    "operational": {
+      "exit_plan": {
+        "preferred": "Exitregeling incl. dataportabiliteit en redelijke ondersteuning",
+        "minimum": "Dataportabiliteit (export) + redelijke ondersteuning",
+        "notes": "Definieer formaat, termijn, kosten, en deletion/return verplichting."
+      },
+      "backups": {
+        "preferred": "Back-up verplicht + restore tests",
+        "minimum": "Back-up verplicht",
+        "notes": "Bepaal RPO/RTO waar relevant."
+      },
+      "escrow": {
+        "preferred": "Escrow bij kritieke dienstverlening (contextafhankelijk)",
+        "minimum": "Continuïteitsmaatregelen",
+        "notes": "Bij SaaS eerder focus op data-export + DR dan traditionele broncode-escrow."
+      }
+    }
+  },
+  "rules": [
+    {
+      "id": "R-CRIT-001",
+      "level": "critical",
+      "dimension": "liability",
+      "title": "Onbeperkte aansprakelijkheid",
+      "description": "Aansprakelijkheid is onbeperkt of cap ontbreekt volledig.",
+      "signals": ["no_cap", "unlimited_liability"],
+      "action": {
+        "recommendation": "Escaleren + aanpassen vereist",
+        "escalation": "required"
+      }
+    },
+    {
+      "id": "R-CRIT-002",
+      "level": "critical",
+      "dimension": "privacy",
+      "title": "Ontbrekende datalekmeldplicht",
+      "description": "Geen contractuele verplichting tot (tijdige) melding van beveiligingsincidenten/datalekken.",
+      "signals": ["missing_incident_notification"],
+      "action": {
+        "recommendation": "Escaleren + opnemen meldtermijn en inhoudseisen",
+        "escalation": "required"
+      }
+    },
+    {
+      "id": "R-CRIT-003",
+      "level": "critical",
+      "dimension": "operational",
+      "title": "Geen exit/continuïteitsregeling bij SaaS",
+      "description": "Geen bepaling over dataportabiliteit/exit support/teruggave of verwijdering data.",
+      "signals": ["missing_exit_plan", "missing_data_portability"],
+      "action": {
+        "recommendation": "Escaleren + exitregeling opnemen",
+        "escalation": "required"
+      }
+    },
+    {
+      "id": "R-CRIT-004",
+      "level": "critical",
+      "dimension": "privacy",
+      "title": "Subverwerkers zonder beperkingen",
+      "description": "Verwerker mag onbeperkt subverwerkers inschakelen zonder transparantie/bezwaarrecht.",
+      "signals": ["unrestricted_subprocessors"],
+      "action": {
+        "recommendation": "Escaleren + subprocessor-regime opnemen",
+        "escalation": "required"
+      }
+    },
+    {
+      "id": "R-CRIT-005",
+      "level": "critical",
+      "dimension": "ip",
+      "title": "Onbedoelde IP-overdracht",
+      "description": "Klant of leverancier draagt IP over op een wijze die waarschijnlijk onbedoeld of disproportioneel is.",
+      "signals": ["unintended_ip_assignment"],
+      "action": {
+        "recommendation": "Escaleren + herformuleren licentie/ownership",
+        "escalation": "required"
+      }
+    },
+    {
+      "id": "R-HIGH-001",
+      "level": "high",
+      "dimension": "liability",
+      "title": "Cap onder minimum bandbreedte",
+      "description": "Aansprakelijkheidslimiet is lager dan de minimum ICTRecht-positie.",
+      "signals": ["cap_below_minimum"],
+      "thresholds": {
+        "liability_cap_months_fees": { "lt": 6 }
+      },
+      "action": {
+        "recommendation": "Onderhandelen; escalatie afhankelijk van dealcontext",
+        "escalation": "conditional"
+      }
+    },
+    {
+      "id": "R-HIGH-002",
+      "level": "high",
+      "dimension": "privacy",
+      "title": "Incidentmelding te laat",
+      "description": "Contractuele incident/datalekmelding later dan 72 uur na ontdekking.",
+      "signals": ["incident_notification_late"],
+      "thresholds": {
+        "incident_notification_hours": { "gt": 72 }
+      },
+      "action": {
+        "recommendation": "Onderhandelen naar 48–72 uur; escalatie bij gevoelige data/sector",
+        "escalation": "conditional"
+      }
+    },
+    {
+      "id": "R-HIGH-003",
+      "level": "high",
+      "dimension": "security",
+      "title": "Geen assurance of TOMs",
+      "description": "Onvoldoende beveiligingsmaatregelen of geen (redelijke) assurance (ISO/SOC/TOMs).",
+      "signals": ["missing_security_measures", "no_assurance"],
+      "action": {
+        "recommendation": "Onderhandelen; eisen TOMs en (third-party) assurance",
+        "escalation": "conditional"
+      }
+    },
+    {
+      "id": "R-MED-001",
+      "level": "medium",
+      "dimension": "commercial",
+      "title": "SLA/credits onder preferred",
+      "description": "SLA of service credits zijn beperkt of ontbreken deels; niet per se dealbreaker.",
+      "signals": ["weak_sla", "low_service_credits"],
+      "action": {
+        "recommendation": "Onderhandelen indien business-critical; anders acceptabel met notitie",
+        "escalation": "none"
+      }
+    },
+    {
+      "id": "R-LOW-001",
+      "level": "low",
+      "dimension": "compliance",
+      "title": "Redactionele of marktconforme afwijking",
+      "description": "Afwijking zonder materiële impact of marktconform binnen bandbreedte.",
+      "signals": ["stylistic_variation", "market_standard_deviation"],
+      "action": {
+        "recommendation": "Accepteren met korte toelichting",
+        "escalation": "none"
+      }
+    }
+  ],
+  "escalation": {
+    "default_thresholds": {
+      "deal_value_eur": 250000,
+      "high_risk_requires_escalation_if_deal_value_above_threshold": true
+    },
+    "mandatory": [
+      {
+        "id": "E-MAND-001",
+        "when": { "risk_level": "critical" },
+        "then": ["escalate_partner_or_senior"],
+        "notes": "Kritiek risico: altijd escaleren."
+      }
+    ],
+    "conditional": [
+      {
+        "id": "E-COND-001",
+        "when": { "risk_level": "high", "deal_value_eur": { "gt": 250000 } },
+        "then": ["escalate_partner_or_senior"],
+        "notes": "Hoog risico + hoge dealwaarde: escaleren."
+      },
+      {
+        "id": "E-COND-002",
+        "when": { "dimension": "privacy", "risk_level": "high", "special_categories_of_data": true },
+        "then": ["require_dpo_or_privacy_lead_review"],
+        "notes": "Hoog privacyrisico + bijzondere persoonsgegevens: escaleren naar privacy lead/DPO."
+      },
+      {
+        "id": "E-COND-003",
+        "when": { "risk_level": "high", "sector": { "in": ["zorg", "finance", "overheid"] } },
+        "then": ["escalate_partner_or_senior"],
+        "notes": "Regulated sector: escaleren bij hoog risico."
+      },
+      {
+        "id": "E-COND-004",
+        "when": { "dimension": "liability", "signals": { "contains": "cap_below_minimum" } },
+        "then": ["escalate_if_no_mitigation_available"],
+        "notes": "Onder minimum cap: escaleren tenzij harde mitigatie mogelijk en expliciet gemotiveerd."
+      }
+    ]
+  },
+  "finding_output_schema": {
+    "required_fields": [
+      "id",
+      "dimension",
+      "risk_level",
+      "title",
+      "summary",
+      "rationale",
+      "recommended_action"
+    ],
+    "field_definitions": {
+      "id": "Unieke identifier voor de bevinding (bijv. ISSUE-001).",
+      "dimension": "Eén van de rubric dimensions (id).",
+      "risk_level": "Eén van: low, medium, high, critical.",
+      "title": "Korte titel van het issue.",
+      "summary": "1–2 zinnen wat er aan de hand is.",
+      "rationale": "Waarom dit risicovol is, in NL, bondig.",
+      "preferred_position": "Relevante preferred position (indien van toepassing).",
+      "fallback_position": "Acceptabele fallback (indien van toepassing).",
+      "recommended_action": "Accepteren / Onderhandelen / Escaleren (+ wie) / Mitigeren.",
+      "signals": "Lijst van herkende signalen/flags die deze finding triggerden.",
+      "clause_library_refs": "Optionele verwijzingen naar clause IDs uit de clausulebibliotheek."
+    }
+  }
+}

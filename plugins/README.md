@@ -1,3 +1,4 @@
+## Legal plugin voor Claude Cowork met de kennis van ICTRecht
 # Plugins
 
 Integrations that connect Claude to external legal data sources. Where a Skill shapes how Claude reasons, a Plugin gives Claude access to live external knowledge — court rulings, legislation, regulation texts, document systems.

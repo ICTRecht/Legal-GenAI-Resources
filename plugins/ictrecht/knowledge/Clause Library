@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "id": "ictrecht-clause-library-v1",
+    "version": "0.1.0",
+    "language": "nl-NL",
+    "last_updated": "2026-02-12"
+  },
+  "categories": [
+    {
+      "category": {
+        "id": "ASP",
+        "name": "Aansprakelijkheid",
+        "description": "Clausules inzake beperking en structurering van aansprakelijkheid."
+      },
+      "clauses": [
+        {
+          "id": "ASP-01",
+          "title": "Algemene beperking van aansprakelijkheid (alle rechtsgronden)",
+          "topic": "liability.scope",
+          "party_position": ["supplier", "mutual"],
+          "jurisdiction": ["NL"],
+          "languages": ["nl", "en"],
+          "risk_links": [
+            { "dimension": "liability", "signals": ["no_structured_limitation"] }
+          ],
+          "preferred": {
+            "nl": "De aansprakelijkheid van [Leverancier/Partijen] voor schade of enige andere claims op grond van een toerekenbare tekortkoming in de nakoming van de overeenkomst, een onrechtmatige daad dan wel op enige andere grond, is beperkt tot het bepaalde in dit artikel.",
+            "en": "The liability of [Supplier/Parties] for damages or any other claims due to an attributable breach of contract, tort, or based on any other ground, shall be limited in accordance with this clause.",
+            "commentary": "Brengt alle aansprakelijkheidsgrondslagen onder één limiteringsregime. Essentieel als kapstokbepaling."
+          },
+          "negotiation_notes": [
+            "Overweeg wederkerigheid in ICT-context.",
+            "Let op samenloop schadevergoeding vs. ongedaanmaking bij ontbinding.",
+            "Internationaal: expliciet samenloop uitsluiten indien gewenst."
+          ],
+          "risk_if_missing": "Aansprakelijkheid kan buiten limiteringsartikel vallen (onrechtmatige daad e.d.)."
+        },
+        {
+          "id": "ASP-02",
+          "title": "Aansprakelijkheid beperkt tot vast bedrag",
+          "topic": "liability.cap.fixed",
+          "party_position": ["supplier", "mutual"],
+          "jurisdiction": ["NL"],
+          "languages": ["nl", "en"],
+          "variables": [
+            { "name": "AMOUNT_PER_EVENT", "type": "number" },
+            { "name": "ANNUAL_CAP", "type": "number" }
+          ],
+          "risk_links": [
+            { "dimension": "liability", "signals": ["cap_below_minimum"] }
+          ],
+          "preferred": {
+            "nl": "De aansprakelijkheid van [Leverancier/Partijen] is beperkt tot een bedrag van [AMOUNT_PER_EVENT] euro per gebeurtenis (waarbij een reeks van samenhangende gebeurtenissen geldt als één gebeurtenis) tot een maximum van [ANNUAL_CAP] euro per jaar, ongeacht het aantal gebeurtenissen.",
+            "en": "Liability of [Supplier/Parties] is limited to an amount of [AMOUNT_PER_EVENT] euros per event (where a series of related events shall be considered to be a single event), up to a maximum of [ANNUAL_CAP] euros per year, regardless of the number of events.",
+            "commentary": "Geschikt voor overeenkomsten met duidelijk afgebakende financiële exposure."
+          },
+          "market_guidance": {
+            "range_percentage_of_contract_value": "50% – 500%",
+            "notes": "Marktconformiteit afhankelijk van sector, criticaliteit en dealwaarde."
+          },
+          "fallback_logic": {
+            "acceptable_if": [
+              "Cap >= 100% contractwaarde",
+              "Beperkte risicoblootstelling",
+              "Geen bijzondere persoonsgegevens"
+            ]
+          },
+          "risk_if_below_market": "Hoog risico bij cap < 6 maanden fees of < 100% contractwaarde."
+        },
+        {
+          "id": "ASP-03",
+          "title": "Aansprakelijkheid beperkt tot contractwaarde (project)",
+          "topic": "liability.cap.contract_value.project",
+          "party_position": ["supplier", "mutual"],
+          "jurisdiction": ["NL"],
+          "languages": ["nl", "en"],
+          "risk_links": [
+            { "dimension": "liability", "signals": ["project_based_agreement"] }
+          ],
+          "preferred": {
+            "nl": "De aansprakelijkheid van [Leverancier/Partijen] is per gebeurtenis (waarbij een reeks van samenhangende gebeurtenissen geldt als één gebeurtenis) beperkt tot de bedragen (exclusief btw) die Klant aan Leverancier verschuldigd is onder de Overeenkomst.",
+            "en": "Liability of [Supplier/Parties] is limited per event (where a series of related events shall be considered to be a single event) to the amounts (excluding VAT) payable by Customer to Supplier under the Agreement.",
+            "commentary": "Geschikt voor eenmalige projectovereenkomsten. Gebruik bij duurovereenkomsten een tijdsgebonden cap."
+          },
+          "negotiation_notes": [
+            "‘Verschuldigde’ bedragen is klantvriendelijker dan ‘betaalde’ bedragen.",
+            "Betaalde bedragen kunnen verhaalsmogelijkheden beperken bij opschorting."
+          ],
+          "use_when": [
+            "Projectovereenkomst",
+            "Eenmalige dienstverlening",
+            "Geen structurele duurovereenkomst"
+          ],
+          "avoid_when": [
+            "Langlopende SaaS-overeenkomst",
+            "Abonnementsmodel"
+          ]
+        },
+        {
+          "id": "ASP-04",
+          "title": "Aansprakelijkheid beperkt tot contractwaarde (duurovereenkomst)",
+          "topic": "liability.cap.contract_value.recurring",
+          "party_position": ["supplier", "mutual"],
+          "jurisdiction": ["NL"],
+          "languages": ["nl", "en"],
+          "variables": [
+            { "name": "PERIOD_MONTHS", "type": "number", "example": 12 },
+            { "name": "ANNUAL_MAX_AMOUNT", "type": "number", "example": 500000 }
+          ],
+          "risk_links": [
+            { "dimension": "liability", "signals": ["recurring_agreement"] }
+          ],
+          "preferred": {
+            "nl": "De aansprakelijkheid van [Leverancier/Partijen] is per gebeurtenis (waarbij een reeks van samenhangende gebeurtenissen geldt als één gebeurtenis) beperkt tot de bedragen (exclusief btw) die Klant aan Leverancier verschuldigd is over een periode van [PERIOD_MONTHS] maanden voorafgaand aan het ontstaan van de schade en tot een maximum van [ANNUAL_MAX_AMOUNT] euro per jaar, ongeacht het aantal gebeurtenissen.",
+            "en": "Liability of [Supplier/Parties] is limited per event (where a series of related events shall be considered to be a single event) to the amounts (excluding VAT) payable by Customer to Supplier over a period of [PERIOD_MONTHS] months prior to the damage causing event, and up to a maximum of [ANNUAL_MAX_AMOUNT] euros per year, regardless of the number of events.",
+            "commentary": "Standaard limitering voor duurovereenkomsten (zoals SaaS). Combineer doorgaans met ASP-05."
+          },
+          "market_guidance": {
+            "period_range_months": "6 – 60 maanden",
+            "percentage_contract_value_range": "50% – 500%",
+            "notes": "Marktconformiteit afhankelijk van sector, kritikaliteit en onderhandelingspositie."
+          },
+          "combine_with": ["ASP-05"],
+          "risk_if_period_short": "Hoog risico indien < 6 maanden fees.",
+          "use_when": [
+            "SaaS-overeenkomst",
+            "Abonnementsmodel",
+            "Langlopende dienstverlening"
+          ],
+          "avoid_when": [
+            "Eenmalig project (gebruik ASP-03)"
+          ]
+        },
+        {
+          "id": "ASP-05",
+          "title": "Aansprakelijkheid eerste jaar (startfase bescherming)",
+          "topic": "liability.cap.initial_period",
+          "party_position": ["supplier", "mutual"],
+          "jurisdiction": ["NL"],
+          "languages": ["nl", "en"],
+          "variables": [
+            { "name": "PERIOD_MONTHS", "type": "number", "example": 12 },
+            { "name": "ANNUAL_MAX_AMOUNT", "type": "number", "example": 500000 }
+          ],
+          "risk_links": [
+            { "dimension": "liability", "signals": ["early_stage_low_cap"] }
+          ],
+          "preferred": {
+            "nl": "Als de schade ontstaat binnen [PERIOD_MONTHS] maanden na de ingangsdatum van de Overeenkomst, geldt in afwijking van het vorige lid dat de aansprakelijkheid van Leverancier beperkt is tot het bedrag (exclusief btw) dat Klant naar verwachting verschuldigd zal zijn gedurende de eerste [PERIOD_MONTHS] maanden gerekend van de ingangsdatum, tot een maximum van [ANNUAL_MAX_AMOUNT] euro per jaar, ongeacht het aantal gebeurtenissen.",
+            "en": "If the damage occurs within [PERIOD_MONTHS] months from the effective date of the Agreement, then by way of derogation from the previous paragraph, liability of Supplier shall be limited to the amount (excluding VAT) that Customer is expected to owe during the first [PERIOD_MONTHS] months from the effective date, up to a maximum of [ANNUAL_MAX_AMOUNT] euros per year, regardless of the number of events.",
+            "commentary": "Voorkomt een zeer lage cap in de eerste maanden van een langlopende overeenkomst."
+          },
+          "purpose": "Mitigatie van te lage aansprakelijkheidslimiet in de opstartfase.",
+          "combine_with": ["ASP-04"],
+          "negotiation_notes": [
+            "Belangrijk bij hoge implementatiekosten aan begin contract.",
+            "Zorg dat PERIOD_MONTHS gelijk is aan ASP-04."
+          ],
+          "risk_if_missing": "Tijdens eerste maanden mogelijk nauwelijks verhaal mogelijk bij grote totale contractwaarde."
+        }
+      ]
+    }
+  ]
+}
