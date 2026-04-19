@@ -1,166 +1,141 @@
-# 📚 Legal GenAI Prompts Repository
+# Legal GenAI Resources
 
-Welkom bij onze open-source repository voor prompts! Dit project is bedoeld als een gedeelde bron voor het verzamelen, organiseren en delen van prompts die werken met ChatGPT en andere Generative AI (GenAI) systemen en gericht zijn op juridische of ondersteunende taken.
+**The open-source Legal AI resource platform by [ICTRecht](https://ictrecht.nl)**
 
-Naast deze repository hebben we vanuit ICTRecht nog enkele andere openbare bronnen rondom GenAI:
+> Curated prompts, Claude Skills, GRC templates, and legal data integrations — built by lawyers, validated in practice, free to use.
 
-[Factsheet: 'De kunst van het prompten'](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/Factsheet%20prompttrucs%20voor%20juristen.pdf)  
-[Onderzoek: 'Kun je AI vertrouwen voor juridisch werk?'](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/AI-onderzoek%202025.pdf)  
-[Onderzoek: 'AI tooling voor de juridische professional'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Onderzoek/AI-tooling%20voor%20de%20legal%20professionals/Onderzoek%20AI-tooling%20voor%20de%20legal%20professionals.pdf)  
-[Factsheet 'Richtlijnen gebruik LLM's'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Richtlijnen/ICTRECHT%20ChatGPT%20Richtlijnen.pdf)  
-[Factsheet: 'Hoe gebruiken wij ChatGPT'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Hoe%20wij%20ChatGPT%20gebruiken.pdf)  
-[Factsheet: 'CustomGPT's'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Factsheets/Factsheet%20-%20Custom%20GPTs.pdf)
-
----
-## 🧠 Hoe de prompts te gebruiken
-
-1. **Structuur**
-   - GenAI gaat goed om met zeer gestructureerde instructies (bijvoorbeeld in de vorm van XML, JSON of MarkDown). 
-   - De prompts binnen deze omgeving hebben allemaal een dergelijke structuur.
-
-2. **Gebruik**
-   - Je kunt de prompts kopieren en plakken in een willekeurige GenAI-toepassing om deze uit te voeren. Aan de prompt zelf hoef je niets meer te doen. Sommige prompts zijn ontwikkeld om een bestand te reviewen. In dat geval upload je het bestand samen met de prompt. Vaak is een druk op enter voldoende maar het kan zijn dat de AI vraagt of het de prompt moet uitvoeren. Een vriendelijke 'ja, graag' is dan voldoende.
-   - Sommige prompts bevatten specifieke instructies of zijn geschikt voor specifieke modellen, lees in dat geval het Readme bestand voor aanvullende informatie.
-
-3. **Aanpassen naar eigen wens**
-   - Heb je een prompt gevonden die je graag wil aanpassen naar een specifieke situatie, zoals het invoegen van een bedrijfsspecifiek playbook? Kopieer de prompt dan samen met het playbook in een AI en vraag het om de prompt aan te passen naar de specifieke situatie. De gestructureerde prompt zal aangepast worden zonder de opzet aan te passen.
-   - Vergeet de nieuwe prompt niet te delen!
-
-
-## 🛠️ Hoe de repository te gebruiken
-
-1. **Verkennen**
-   - Blader door de mappen en bestanden om prompts te vinden die nuttig kunnen zijn voor jouw projecten.
-   - Elke prompt bevat een beschrijving van het doel, voorbeelden en gebruiksinstructies.
-
-2. **Bijdragen**
-   - Heb je een interessante prompt ontwikkeld? Voeg deze toe aan de repository door een Pull Request te maken.
-   - Zorg ervoor dat je prompt voldoet aan de richtlijnen voor indeling en beschrijving (zie hieronder).
-
-3. **Aanpassen en experimenteren**
-   - Pas prompts aan naar jouw behoeften en deel verbeteringen met de community.
+[![ICTRecht Verified](https://img.shields.io/badge/ICTRecht-Verified-blue)](https://ictrecht.nl)
+[![License](https://img.shields.io/github/license/ICTRecht/Legal-GenAI-Resources)](LICENSE.md)
+[![Contributions Welcome](https://img.shields.io/badge/contributions-welcome-brightgreen)](CONTRIBUTING.md)
 
 ---
 
-## 🆕 Nieuwe prompts toevoegen?
-   - De makkelijkste route is om bovenaan deze pagina een issue aan te maken en een prompt in te sturen. Dit mag een kant en klare prompt zijn, maar het idee voor een prompt is ook van harte welkom! Wij zorgen ervoor dat er een uitgebreide en gestrutureerde versie van komt. 
-   - Wil je - als doorgewinterde GitHub-gebruiker 🤓 - zelf uploaden? Zie dan hieronder bij **Bijdragen**.
+## What is this?
 
-## 📂 Bestandsstructuur
+This repository is a growing platform of Legal AI resources for lawyers, compliance professionals, and legal tech practitioners. Every resource is grounded in Dutch and European law and validated by ICTRecht's legal team.
 
-We hebben een eenvoudige en duidelijke structuur om prompts te organiseren:
+We cover five layers:
+
+| Layer | What it is | Folder |
+|---|---|---|
+| **Prompts** | One-shot instructions for a specific legal task. Copy, paste, use. | [`/prompts/`](./prompts/) |
+| **Skills** | Reusable instruction sets that give Claude persistent, structured behaviour — system prompts, personas, workflows. | [`/skills/`](./skills/) |
+| **Templates** | GRC documents for AI-assisted completion or review: DPIAs, AI Act checklists, processor agreements, risk registers. | [`/templates/`](./templates/) |
+| **Plugins** | Integrations that let Claude reach external systems: rechtspraak.nl, EUR-Lex, knowledge bases, document management. | [`/plugins/`](./plugins/) |
+| **Resources** | References to external sources, datasets, research, and tooling. | [`/resources/`](./resources/) |
+
+---
+
+## Why ICTRecht?
+
+ICTRecht is a Dutch law firm specialising in IT law, privacy, and digital regulations since 2004. Our team of lawyers uses these resources daily. The **ICTRecht Verified** label marks content that has been reviewed and tested in actual legal practice — something no other Legal AI GitHub repository offers.
+
+---
+
+## Quick start
+
+### Using a prompt
+
+1. Navigate to [`/prompts/`](./prompts/) and find a prompt for your task.
+2. Open the `README.md` in the prompt folder to understand the context and limitations.
+3. Copy the prompt content and paste it into Claude, ChatGPT, or your preferred LLM.
+
+### Using a Skill
+
+1. Navigate to [`/skills/`](./skills/) and choose a Skill.
+2. Read the `README.md` to understand the Skill's purpose, compatible models, and known limitations.
+3. Use `skill.md` as a system prompt to configure Claude for the session.
+
+### Using a template
+
+1. Navigate to [`/templates/`](./templates/) and select the relevant regulation folder.
+2. Follow the instructions in the template's `README.md`.
+
+---
+
+## Repository structure
 
 ```
-/
-├── README.md            # Beschrijving van de repo
-├── CONTRIBUTING.md      # Richtlijnen voor bijdragen
-├── prompts/
-│   ├── algemeen/        # Prompts die breed toepasbaar zijn
-│   ├── juridisch/       # Prompts voor juridische toepassingen
-│   │   ├── contract_review/ # Prompts voor contractanalyse
-│   │   ├── rechtspraak/     # Samenvattingen van rechtspraak
-│   │   ├── juridische_vragen/ # Antwoorden op juridische vragen
-│   │   └── ...              # Andere juridische domeinen
-│   └── sjablonen/       # Algemene formats of sjablonen voor prompts
-└── voorbeelden/         # Voorbeeldinteracties met prompts
-```
-
-### Beschrijving van submappen
-
-- **algemeen/**: Prompts die nuttig zijn voor algemene doeleinden (bijv. brainstormen, samenvatten, enz.).
-- **juridisch/**: Prompts gericht op juridische domeinen, zoals contractreview, rechtspraak samenvatten en juridische vragen beantwoorden.
-  - **contract_review/**: Analyseer en verbeter juridische contracten.
-  - **juridische_vragen/**: Beantwoord veelvoorkomende of complexe juridische vragen.
-  - **rechtspraak/**: Maak samenvattingen van juridische uitspraken en vonnissen.
-  - **wetgeving/**: Maak samenvattingen van wetgeving of stel daar vragen over.
-- **sjablonen/**: Basisstructuren om nieuwe prompts mee op te zetten.
-- **voorbeelden/**: Bevat conversaties en resultaten die zijn gegenereerd met behulp van de prompts.
-
----
-
-## 📜 Richtlijnen voor Prompts
-
-### Bestandsnaam
-Gebruik duidelijke en beschrijvende bestandsnamen, zoals `contract_review_voorbeeld.md` of `rechtspraak_samenvatting.md`.
-
-### Bestandssjabloon
-Elke prompt wordt in een nieuwe mapje gezet in één van de categorieën in de mappenstructuur. Elke prompt-map bevat:
-- een bestand met de prompt zelf, bijvoorbeeld `dpa_checker_prompt.xml` of `juridische_vraag.txt`;
-- een bestand `readme.md` die context en instructies geeft hoe de prompt de gebruiken. Neem daar op zijn minst het doel van de prompt en de nodige instructies in mee, maar optioneel ook aanvullende tips voor gebruik en een voorbeeldoutput. Dat kan er als volgt uit zien:
-
-```markdown
-# 🎯 Doel van de Prompt
-[Beschrijf het doel van de prompt en waarvoor deze bedoeld is.]
-
----
-
-## 📝 Instructies voor gebruik
-[Belangrijke instructies om met de prompt de gewenste output te krijgen]
-
----
-
-## 💡 Tips voor Gebruik
-[Voeg hier tips toe voor het aanpassen of optimaliseren van de prompt.]
-
----
-
-## 📋 Voorbeeldoutput
-Geef hier een voorbeeld van de gegenereerde output, zodat gebruikers weten wat ze kunnen verwachten.
+Legal-GenAI-Resources/
+├── prompts/          # One-shot prompts per legal task
+│   ├── contracts/
+│   ├── privacy/
+│   ├── litigation/
+│   └── general/
+├── skills/           # Reusable Claude instruction sets and personas
+│   ├── contract-reviewer/
+│   ├── gdpr-analyst/
+│   └── ...
+├── templates/        # GRC documents and compliance templates
+│   ├── gdpr/
+│   ├── ai-act/
+│   └── nis2/
+├── plugins/          # Integrations with external legal data sources
+│   └── ictrecht/
+├── resources/        # External sources, research, tooling references
+└── CONTRIBUTING.md
 ```
 
 ---
 
-## ✍️ Bijdragen
-Wil je bijdragen aan dit project? Volg dan deze stappen om je wijzigingen correct in te dienen:
+## Highlighted resources
 
-### 1. Fork & Clone
-Fork deze repository en clone je fork naar je lokale omgeving.
+### Prompts
+- **NDA Checker** — Reviews an NDA against standard Dutch clauses and flags deviations
+- **DPA Checker** — Checks a Data Processing Agreement for GDPR compliance
+- **DPIA Assistant** — Guides you through a Data Protection Impact Assessment
+- **Contract Risk Manager** — Identifies risk clauses in commercial contracts
+- **Judgment Summariser** — Summarises Dutch court rulings (rechtspraak.nl)
 
-```bash
-git clone {url van je fork}
-cd prompts
-```
+### Skills *(coming soon)*
+- Legal Contract Reviewer
+- GDPR Compliance Analyst
+- EU AI Act Navigator
+- NIS2 Checklist Assistant
 
-### 2. Maak een feature branch
-Werk nooit direct in `main`. Maak een nieuwe branch gebaseerd op `main`:
+### Templates *(coming soon)*
+- DPIA template (GDPR)
+- AI system classification checklist (EU AI Act)
+- Processor agreement template
+- Risk register
 
-```bash
-git checkout main
-git pull origin main  # Zorg dat je up-to-date bent
-git checkout -b prompt/{naam-van-je-prompt}
-```
-
-### 3. Werk aan je wijzigingen
-Voeg je codewijzigingen toe, commit ze en push naar je fork:
-
-```bash
-git add .
-git commit -m "Beschrijving van de wijziging"
-git push origin prompt/{naam-van-je-prompt}
-```
-
-### 4. Maak een Pull Request aan
-1. Ga naar de [GitHub repo](https://github.com/ICTRecht/Legal-GenAI-Resources).
-2. Open een **Pull Request** van jouw `prompt/{naam-van-je-prompt}` branch naar de `main` branch.
-3. Voeg een duidelijke beschrijving toe van je wijziging.
-
-### 5. Review en Merge
-- Het team zal je PR beoordelen en eventueel feedback geven.
-- Zodra goedgekeurd, wordt de wijziging gemerged in `main`.
-- Het team kan nog mogelijk optimalisaties uitvoereen aan de prompts, waarna wijzigingen ook op de `main` branch zullen worden gepubliceerd.
-
-### 6. Synchroniseer je lokale repo
-Na het mergen, houd je lokale repository up-to-date:
-
-```bash
-git checkout main
-git pull origin main
-git branch -d prompt/{naam-van-je-prompt}  # Verwijder de feature branch lokaal
-```
-
-**Dank voor je bijdrage!**
 ---
 
-## 🌐 Community en support
+## Contributing
 
-Heb je vragen of wil je feedback geven? Open een [issue](https://github.com/ICTRecht/Legal-GenAI-Resources/issues).
+We welcome contributions from the legal and legal tech community. Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before submitting.
+
+Every contribution must include:
+- A clear description of the legal context (applicable regulation, jurisdiction)
+- An example output showing what the resource produces
+- Explicit limitations (what it does *not* handle well)
+
+---
+
+## For Dutch users
+
+*Voor Nederlandstalige gebruikers:* De juridische context van alle resources is gericht op het Nederlandse en Europese recht. De instructies zijn in het Engels geschreven omdat dit de kwaliteit en consistentie van AI-output verbetert en de vindbaarheid voor de internationale community vergroot. Je kunt Engelstalige prompts en Skills zonder moeite gebruiken in een Nederlandstalige workflow.
+
+---
+
+## ICTRecht publications on Legal AI
+
+- [Factsheet: 'De kunst van het prompten'](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/Factsheet%20prompttrucs%20voor%20juristen.pdf)
+- [Research: 'Kun je AI vertrouwen voor juridisch werk?'](https://www.ictrecht.nl/hubfs/AI-onderzoek%202025/AI-onderzoek%202025.pdf)
+- [Research: 'AI tooling voor de juridische professional'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Onderzoek/AI-tooling%20voor%20de%20legal%20professionals/Onderzoek%20AI-tooling%20voor%20de%20legal%20professionals.pdf)
+- [Factsheet: 'Richtlijnen gebruik LLMs'](https://www.ictrecht.nl/hubfs/Kennisdocumenten/Richtlijnen/ICTRECHT%20ChatGPT%20Richtlijnen.pdf)
+
+---
+
+## License
+
+[MIT License](LICENSE.md) — free to use, adapt, and redistribute with attribution.
+
+---
+
+## About ICTRecht
+
+[ICTRecht](https://ictrecht.nl) is a leading Dutch law firm in IT law, privacy, and digital compliance. We advise organisations on GDPR, the EU AI Act, NIS2, software contracts, and more. This repository is our contribution to the Legal AI community.
+
+- Website: [ictrecht.nl](https://ictrecht.nl)
+- LinkedIn: [ICTRecht](https://www.linkedin.com/company/ictrecht/)
