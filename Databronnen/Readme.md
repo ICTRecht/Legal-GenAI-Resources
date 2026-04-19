@@ -1,27 +1,16 @@
-## 📦 Custom GPT Sandbox – Bronbestanden
+> **This folder has been migrated.**
+> All content from `Databronnen/` has moved to [`/resources/`](../resources/).
+> Please update any bookmarks or links. This folder will be removed in a future release.
 
-Welkom! In deze repository verzamelen we verschillende bronbestanden, datasets en testdocumenten. Dit kun je gebruiken voor het oefenen en experimenteren met het bouwen van RAG-gebaseerde systemen.
+---
 
-Het doel van deze repo is om een dataset te publiceren om te testen met onder andere:
+## Databronnen (archived)
 
-- retrieval en document-search (RAG)
-- chunking en documentstructuur
-- prompt engineering en instructiehiërarchie
-- JSON-structuren en clausulebibliotheken
-- juridische/compliance use cases
-- consistentie en reproduceerbaarheid van output
+This folder previously contained RAG source documents for privacy, AI law, and Woo (Open Government Act) topics.
 
-Deze repository is primair bedoeld als ontwikkel- en testomgeving en de datasets zijn slechts voorbeelden van openbare en generieke data.
+The content is now available in structured, English-language format in:
 
-
-## 📁 Repository structuur
-
-Hieronder staan de verschillende mappen in deze repo, inclusief korte toelichting en links naar relevante documenten.
-
-Naast deze datasets staat op de Legal-GenAI-Resources pagina ook nog voorbeeldprompts die gebruikt kunnen worden als systeeminstructie.
-
-
-## 🧭 Notities
-- De documenten en structuur zijn bedoeld voor experimenten en kunnen wijzigen.
-- Bestanden kunnen zowel ruwe input als afgeleide versies bevatten.
-- Waar relevant worden versies en wijzigingen bijgehouden via Git.
+- [`/resources/privacy.md`](../resources/privacy.md) — GDPR / AVG documents
+- [`/resources/ai-law.md`](../resources/ai-law.md) — AI & privacy law documents
+- [`/resources/open-data.md`](../resources/open-data.md) — Woo / open government documents
+- [`/resources/README.md`](../resources/README.md) — full index
